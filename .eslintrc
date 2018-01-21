@@ -6,7 +6,8 @@
     "globals":{
         "__ENV__": true,
         "require": true,
-        "console": true
+        "console": true,
+        "module": true
     },
     "parserOptions": {
         "ecmaFeatures": {
