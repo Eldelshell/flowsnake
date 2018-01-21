@@ -42,7 +42,7 @@ const externals = {
 module.exports = {
     entry: './lib/index.js',
     output: {
-        filename: `${NPM_INFO.name}-${NPM_INFO.version}.min.js`,
+        filename: `flowsnake.min.js`,
         path: path.resolve(__dirname, 'dist'),
         library: 'flowsnake',
         libraryTarget: 'umd'
