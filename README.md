@@ -16,7 +16,7 @@ const res = Flowsnake.convert(1).from('C').to('K');
 res.eq(274.15) // true!
 ```
 
-### Supported Units
+### Supported Units (132)
 #### Area
 * SquareMeter (m2)
 * SquareMillimeter (mm2)
