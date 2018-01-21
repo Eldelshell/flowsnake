@@ -1,6 +1,6 @@
 {
   "name": "flowsnake",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Open Source library used by the Flowsnake mobile application.",
   "main": "dist/flowsnake.min.js",
   "module": "lib/index.js",
