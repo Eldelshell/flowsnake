@@ -1,8 +1,9 @@
 {
   "name": "flowsnake",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Open Source library used by the Flowsnake mobile application.",
-  "main": "lib/index.js",
+  "main": "dist/flowsnake.min.js",
+  "module": "lib/index.js",
   "scripts": {
     "jest": "jest",
     "test": "./node_modules/.bin/eslint lib/ && jest",
