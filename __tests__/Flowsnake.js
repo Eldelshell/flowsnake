@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import Decimal from 'decimal.js';
 import Flowsnake from '../lib';
 import Temperature from '../lib/converters/temperature/Temperature';
@@ -30,22 +29,3 @@ it('Flowsnake should fail', () => {
     expect(() => Flowsnake.convert(1).to('C') ).toThrow();
     expect(() => Flowsnake.convert(1).from('ft2').to('C') ).toThrow();
 });
-
-// Print the units for documentation.
-const descs = Flowsnake.convert().getDescriptors();
-const text = [];
-let total = 0;
-for (var k in descs) {
-    if (!descs.hasOwnProperty(k)) {
-        continue;
-    }
-
-    const desc = descs[k];
-    text.push(`\n#### ${_.capitalize(k)}`);
-    desc.describe().forEach((unit) => {
-        text.push(`* ${unit.name} (${unit.id})`);
-        total++;
-    });
-}
-text.unshift(`### Supported Units (${total})`);
-console.log(text.join('\n'));
