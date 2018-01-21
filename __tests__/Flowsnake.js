@@ -1,9 +1,16 @@
+import Decimal from 'decimal.js';
 import Flowsnake from '../lib';
 import Temperature from '../lib/converters/temperature/Temperature';
 import TemperatureMetric from '../lib/converters/temperature/Metric';
 
 it('Flowsnake should convert without descriptor', () => {
     expect(Flowsnake.convert(1).from('C').to('K')).toBeDefined();
+    expect(Flowsnake.convert(1).from('C').to('C')).toBeDefined();
+});
+
+it('Flowsnake should convert with Decimal.js BigDecimal', () => {
+    const v = new Decimal(30.5);
+    expect(Flowsnake.convert(v).from('C').to('K')).toBeDefined();
 });
 
 it('Flowsnake should convert with descriptor name', () => {
