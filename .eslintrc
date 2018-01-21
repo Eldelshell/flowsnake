@@ -1,0 +1,41 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended"
+    ],
+    "globals":{
+        "__ENV__": true,
+        "require": true,
+        "console": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "modules": true
+        }
+    },
+    "env": {
+        "es6": true
+    },
+    "rules": {
+        "quotes": [2, "single"],
+        "eqeqeq": [2],
+        "no-unused-vars": [1],
+        "no-use-before-define": [1],
+        "camelcase": [2],
+        "max-len": [2, 120],
+        "no-bitwise": [2],
+        "no-tabs": [2],
+        "one-var-declaration-per-line": [2],
+        "arrow-parens": [2],
+        "no-var": [2],
+        "prefer-const": [2],
+        "curly": [2],
+        "no-alert": [2],
+        "semi": ["error"],
+        "strict": ["error", "global"],
+        "no-trailing-spaces": ["error"],
+        "comma-dangle": ["error"],
+        "no-shadow": ["error"],
+        "no-console": [0]
+    }
+}

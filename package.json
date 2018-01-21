@@ -1,0 +1,41 @@
+{
+  "name": "flowsnake",
+  "version": "0.0.1",
+  "description": "Open Source library used by the Flowsnake mobile application.",
+  "main": "lib/index.js",
+  "scripts": {
+    "jest": "jest",
+    "test": "./node_modules/.bin/eslint lib/ && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Eldelshell/flowsnake.git"
+  },
+  "keywords": [
+    "metric",
+    "imperial",
+    "unit",
+    "conversion",
+    "mathematics",
+    "physics",
+    "algebra"
+  ],
+  "author": "@eldelshell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eldelshell/flowsnake/issues"
+  },
+  "homepage": "https://github.com/Eldelshell/flowsnake#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^22.1.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.16.0",
+    "jest": "^22.1.4"
+  },
+  "dependencies": {
+    "decimal.js": "^9.0.1",
+    "mathjs": "^3.20.1"
+  }
+}
