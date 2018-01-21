@@ -33,7 +33,8 @@ it('Flowsnake should fail', () => {
 
 // Print the units for documentation.
 const descs = Flowsnake.convert().getDescriptors();
-const text = ['### Supported Units'];
+const text = [];
+let total = 0;
 for (var k in descs) {
     if (!descs.hasOwnProperty(k)) {
         continue;
@@ -41,6 +42,10 @@ for (var k in descs) {
 
     const desc = descs[k];
     text.push(`\n#### ${_.capitalize(k)}`);
-    desc.describe().forEach((unit) => text.push(`* ${unit.name} (${unit.id})`));
+    desc.describe().forEach((unit) => {
+        text.push(`* ${unit.name} (${unit.id})`);
+        total++;
+    });
 }
+text.unshift(`### Supported Units (${total})`);
 console.log(text.join('\n'));
