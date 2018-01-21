@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "jest": "jest",
-    "test": "./node_modules/.bin/eslint lib/ && jest"
+    "test": "./node_modules/.bin/eslint lib/ && jest",
+    "bundle": "./node_modules/.bin/webpack"
   },
   "repository": {
     "type": "git",
@@ -27,12 +28,16 @@
   },
   "homepage": "https://github.com/Eldelshell/flowsnake#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "babel-jest": "^22.1.0",
+    "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.17",
     "eslint": "^4.16.0",
-    "jest": "^22.1.4"
+    "jest": "^22.1.4",
+    "uglifyjs-webpack-plugin": "^1.1.6",
+    "webpack": "^3.10.0",
+    "zip-webpack-plugin": "^2.1.0"
   },
   "dependencies": {
     "decimal.js": "^9.0.1",
