@@ -44,7 +44,6 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
  * Pressure
  * Roman numbers
  * Show sizes
- * Speed
  * Charge
  * Field strength
  * Heat
@@ -231,3 +230,11 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * Kelvin (K)
 * Fahrenheit (F)
 * Rankine (R)
+
+#### Speed
+* KilometerPerHour (km/h)
+* MeterPerSecond (m/s)
+* MilePerHour (m/h)
+* KnotUS (kt-us)
+* KnotUK (kt-uk)
+* FootPerSecond (ft/s)
