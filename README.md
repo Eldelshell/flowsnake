@@ -43,7 +43,7 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
  * Angular velocity
  * Pressure
  * Roman numbers
- * Show sizes
+ * Shoe sizes
  * Charge
  * Field strength
  * Heat
@@ -73,7 +73,7 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
    * Data Transmision
 
 
-### Supported Units (132)
+### Supported Units (148)
 
 #### Area
 * SquareMeter (m2)
@@ -238,3 +238,15 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * KnotUS (kt-us)
 * KnotUK (kt-uk)
 * FootPerSecond (ft/s)
+
+#### Power
+* Watt (W)
+* Milliwatt (mW)
+* Kilowatt (kW)
+* Megawatt (MW)
+* Gigawatt (GW)
+* JoulePerSecond (J/s)
+* HorsePower (HP)
+* BTUHour (btu/h)
+* CaloriePerHour (cal/h)
+* ErgPerSecond (erg/s)
