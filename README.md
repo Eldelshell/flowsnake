@@ -38,17 +38,13 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * More and more units!!!
  * Force
  * Numeral systems
- * Power
  * Acceleration Linear/Angular
  * Angular velocity
- * Pressure
  * Roman numbers
- * Shoe sizes
  * Charge
  * Field strength
  * Heat
  * Magnetism
- * Light
  * Radiation
  * Inductance
  * Electric
