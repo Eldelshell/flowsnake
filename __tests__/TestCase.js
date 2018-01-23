@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import Decimal from 'decimal.js';
 
 expect.extend({
     toBeTruthyWithMessage(received, errMsg) {
@@ -17,7 +18,15 @@ const TestCase = {
             it(testCase, () => {
                 values.forEach(({a,b}) => {
                     const result = _.isString(from) ? descriptor.convert(a, from, to) : descriptor.of(a, from).to(to);
-                    expect(result.eq(b)).toBeTruthyWithMessage(`Failed ${testCase} ${a} !== ${b} results: ${result}`);
+
+                    let res = false;
+                    if(_.isString(result)){
+                        res = result == b;
+                    }else{
+                        res = new Decimal(result).eq(b);
+                    }
+
+                    expect(res).toBeTruthyWithMessage(`Failed ${testCase} ${a} !== ${b} results: ${result}`);
                 });
             });
 
@@ -29,7 +38,15 @@ const TestCase = {
             it(testCase, () => {
                 values.forEach(({a,b}) => {
                     const result = _.isString(from) ? descriptor.convert(b, to, from) : descriptor.of(b, to).to(from);
-                    expect(result.eq(a)).toBeTruthyWithMessage(`Failed ${testCase} ${b} !== ${a} results: ${result}`);
+
+                    let res = false;
+                    if(_.isString(result)){
+                        res = result == a;
+                    }else{
+                        res = new Decimal(result).eq(a);
+                    }
+
+                    expect(res).toBeTruthyWithMessage(`Failed ${testCase} ${b} !== ${a} results: ${result}`);
                 });
             });
         });
