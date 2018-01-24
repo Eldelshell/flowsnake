@@ -25,7 +25,29 @@ it('Flowsnake should convert with unit objects', () => {
     expect(Flowsnake.convert(1).with(Temperature).from(TemperatureMetric.Celsius).to(TemperatureMetric.Kelvin)).toBeDefined();
 });
 
+
+
 it('Flowsnake should fail', () => {
     expect(() => Flowsnake.convert(1).to('C') ).toThrow();
     expect(() => Flowsnake.convert(1).from('ft2').to('C') ).toThrow();
+});
+
+it('Flowsnake should create a unit object', () => {
+    expect(Flowsnake.unit(1).as('C').name).toBe('Celsius');
+    expect(Flowsnake.unit(1).with(Temperature).as('C').name).toBe('Celsius');
+});
+
+it('Flowsnake should convert a unit object', () => {
+    const v = Flowsnake.unit(1).as('C');
+    expect(Flowsnake.convert(v).with(Temperature).to('K')).toBeDefined();
+});
+
+it('Flowsnake should calculate download time', () => {
+    const values = {
+        size: Flowsnake.unit(28).as('GB'),
+        speed: Flowsnake.unit(300).as('Mbps')
+    };
+
+    const seconds = Flowsnake.calculate('download-time').of(values);
+    expect(seconds.value.eq(746.667)).toBeTruthy();
 });
