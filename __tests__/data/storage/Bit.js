@@ -1,6 +1,6 @@
 import _ from 'lodash';
-import Storage from '../../../lib/converters/storage/Storage';
-import TestCase from '../TestCase';
+import Storage from '../../../lib/converters/data/storage/Storage';
+import TestCase from '../../TestCase';
 
 const tests = [{
     from: 'bit', to: 'Kb', values: [{ a: 0, b: 0 }, { a: 1000, b: 1 }]
