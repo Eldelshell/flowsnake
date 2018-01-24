@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import Data from '../../lib/converters/data/Data';
+import Storage from '../../../lib/converters/storage/Storage';
 import TestCase from '../TestCase';
 
 const tests = [{
@@ -8,4 +8,4 @@ const tests = [{
     from: 'Mi', to: 'Ki', values: [{ a: 0, b: 0 }, { a: 1, b: 1024 }]
 }];
 
-TestCase.units(Data, tests);
+TestCase.units(Storage, tests);
