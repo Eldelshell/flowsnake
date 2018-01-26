@@ -4,7 +4,7 @@ const _ = require('lodash');
 const Flowsnake = require('../dist/flowsnake.min.js');
 
 // Print the units for documentation.
-const descs = Flowsnake.convert().getDescriptors();
+const descs = Flowsnake.unit().getDescriptors();
 const text = [];
 let total = 0;
 for (var k in descs) {
