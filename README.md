@@ -25,6 +25,55 @@ const res = Flowsnake.convert(1).from('C').to('K');
 res.eq(274.15) // true!
 ```
 
+## Calculators
+
+Flowsnake includes some easy to use calculators:
+
+* Download time calculator.
+* Tip calculator.
+* Prime factorization.
+* BMI calculator.
+
+### Usage
+
+For example:
+
+```
+import Flowsnake from 'flowsnake';
+
+// Calculate Download Time
+const values = {
+    size: Flowsnake.unit(28).as('GB'),
+    speed: Flowsnake.unit(300).as('Mbps')
+};
+const seconds = Flowsnake.calculate('download-time').of(values);
+const minutes = Flowsnake.convert(seconds).to('min');
+minutes.equals(12.4445); // true!
+
+// Prime factors
+Flowsnake.calculate('prime-factors').of(147); // '3×7²'
+
+// Bill calculator.
+const values = {
+    amount: 55,  // Bill amout
+    percent: 15, // Tip percent
+    pax: 4       // People to split the bill with
+};
+
+const res = Flowsnake.calculate('tip').of(values);
+// {
+//     total: {
+//         tip: 8.25,
+//         amount: 63.25
+//     },
+//     pax: {
+//         tip: 2.06,
+//         amount: 15.81
+//     }
+// }
+
+```
+
 ## Contribute
 
 You want to add a new system of units (for example, Imperial Frequency) it's very easy. First read [this](https://github.com/MarcDiethelm/contributing/blob/master/README.md) guide.
@@ -36,11 +85,8 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * Support on-the-fly units.
 * Support configuration of Math.js
 * More and more units!!!
- * Force
  * Numeral systems
- * Acceleration Linear/Angular
  * Angular velocity
- * Roman numbers
  * Charge
  * Field strength
  * Heat
@@ -60,16 +106,30 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
  * Airflow
  * Density & Specific Volume
  * Inertia
- * Torque
  * Sound
  * Computers
    * Resolution
    * Pixel density
    * Typography
-   * Data Transmision
 
 
-### Supported Units (148)
+### Supported Units (240)
+
+#### Acceleration
+* MeterPerSquareSecond (m/s2)
+* KilometerPerSquareSecond (km/s2)
+* Gravity (g)
+* Gal (Gal)
+* FootPerSquareSecond (ft/s2)
+* MilePerSquareSecond (mi/s2)
+* InchPerSquareSecond (in/s2)
+* YardPerSquareSecond (yd/s2)
+
+#### Angular acceleration
+* RadianPerSquareSecond (rad/s2)
+* RadianPerSquareMinute (rad/min2)
+* RevolutionPerSquareSecond (r/s2)
+* RevolutionPerSquareMinute (r/min2)
 
 #### Area
 * SquareMeter (m2)
@@ -84,7 +144,7 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * SquareYard (yd2)
 * Acre (ac)
 
-#### Data
+#### Storage
 * Bit (bit)
 * Kilobit (Kb)
 * Megabit (Mb)
@@ -120,7 +180,7 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * Parsec (pc)
 * LightYear (ly)
 
-#### Aparentpower
+#### Aparent Power
 * VoltAmpere (VA)
 * MilliVoltAmpere (mVA)
 * KiloVoltAmpere (kVA)
@@ -209,6 +269,18 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * MilesPerGallonUS (mpg-us)
 * MilesPerGallonUK (mpg-uk)
 
+#### Mass
+* Gram (g)
+* Milligram (mg)
+* Microgram (mcg)
+* Kilogram (kg)
+* Ton (mt)
+* Pound (lb)
+* Ounce (oz)
+* Ton (t)
+* Stone (stone)
+* Quarter (qr)
+
 #### Time
 * Second (s)
 * Millisecond (ms)
@@ -226,6 +298,18 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * Kelvin (K)
 * Fahrenheit (F)
 * Rankine (R)
+
+#### Transfer
+* BitSecond (bps)
+* KilobitSecond (kbps)
+* MegabitSecond (Mbps)
+* GigabitSecond (Gbps)
+* TerabitSecond (Tbps)
+* ByteSecond (b/s)
+* KilobyteSecond (kB/s)
+* MegabyteSecond (MB/s)
+* GigabyteSecond (GB/s)
+* TerabyteSecond (TB/s)
 
 #### Speed
 * KilometerPerHour (km/h)
@@ -294,3 +378,29 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * CandelaSquareFoot (cd/ft2)
 * FootLambert (fL)
 * LumenSquareFootSteradian (lm/ft2/sr)
+
+#### Roman
+* Arabic (arabic)
+* Roman (roman)
+
+#### Torque
+* NewtonMeter (N·m)
+* KilonewtonMeter (kN·m)
+* DyneMeter (dyn·m)
+* PoundForceFoot (lbf·ft)
+* OunceForceFoot (ozf·ft)
+* PoundalFoot (pdl·ft)
+* GramForceMeter (gf·m)
+* KilogramForceMeter (kgf·m)
+
+#### Force
+* Newton (N)
+* Kilonewton (kN)
+* Dyne (dyn)
+* JoulePerMeter (J/m)
+* PoundForce (lbf)
+* OunceForce (ozf)
+* Poundal (pdl)
+* GramForce (gf)
+* KilogramForce (kgf)
+* Pond (pond)
