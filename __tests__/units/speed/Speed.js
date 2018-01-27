@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import Speed from '../../lib/converters/speed/Speed';
+import Speed from '../../../lib/converters/speed/Speed';
 import TestCase from '../TestCase';
 
 const tests = [{

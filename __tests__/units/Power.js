@@ -1,4 +1,4 @@
-import Power from '../lib/converters/Power';
+import Power from '../../lib/converters/Power';
 import TestCase from './TestCase';
 
 const tests = [{

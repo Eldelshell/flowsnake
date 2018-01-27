@@ -5,6 +5,6 @@ module.exports = {
     ],
     testPathIgnorePatterns: [
         "/node_modules",
-        "/__tests__/TestCase*"
+        "/__tests__/units/TestCase*"
     ]
 }

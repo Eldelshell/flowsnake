@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import Decimal from 'decimal.js';
-import Mass from '../../lib/converters/mass/Mass';
+import Mass from '../../../lib/converters/mass/Mass';
 import TestCase from '../TestCase';
 
 const tests = [{

@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import Area from '../../lib/converters/area/Area';
+import Area from '../../../lib/converters/area/Area';
 import TestCase from '../TestCase';
 
 const tests = [{

@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import AparentPower from '../../lib/converters/electricity/AparentPower';
+import AparentPower from '../../../lib/converters/electricity/AparentPower';
 import TestCase from '../TestCase';
 
 const tests = [{

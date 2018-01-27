@@ -1,4 +1,4 @@
-import ShoeSize from '../lib/converters/shoes/ShoeSize';
+import ShoeSize from '../../lib/converters/shoes/ShoeSize';
 import TestCase from './TestCase';
 
 const tests = [{

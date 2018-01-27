@@ -1,4 +1,4 @@
-import Gas from '../lib/converters/Gas';
+import Gas from '../../lib/converters/Gas';
 import TestCase from './TestCase';
 
 const tests = [{

@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import Volume from '../../lib/converters/volume/Volume';
+import Volume from '../../../lib/converters/volume/Volume';
 import TestCase from '../TestCase';
 
 const tests = [{

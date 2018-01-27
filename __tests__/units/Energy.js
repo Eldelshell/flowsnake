@@ -1,4 +1,4 @@
-import Energy from '../lib/converters/Energy';
+import Energy from '../../lib/converters/Energy';
 import TestCase from './TestCase';
 
 const tests = [{

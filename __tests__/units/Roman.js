@@ -1,4 +1,4 @@
-import Roman from '../lib/converters/Roman';
+import Roman from '../../lib/converters/Roman';
 import TestCase from './TestCase';
 
 it('Should convert arabic to roman numbers', () => {

@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import Torque from '../../lib/converters/torque/Torque';
+import Torque from '../../../lib/converters/torque/Torque';
 import TestCase from '../TestCase';
 
 const tests = [{

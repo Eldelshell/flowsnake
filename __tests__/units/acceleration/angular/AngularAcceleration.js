@@ -1,4 +1,4 @@
-import AngularAcceleration from '../../../lib/converters/acceleration/angular/AngularAcceleration';
+import AngularAcceleration from '../../../../lib/converters/acceleration/angular/AngularAcceleration';
 import TestCase from '../../TestCase';
 
 const tests = [{

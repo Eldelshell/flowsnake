@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import Storage from '../../../lib/converters/data/storage/Storage';
+import Storage from '../../../../lib/converters/data/storage/Storage';
 import TestCase from '../../TestCase';
 
 const tests = [{

@@ -1,4 +1,4 @@
-import Time from '../lib/converters/Time';
+import Time from '../../lib/converters/Time';
 import TestCase from './TestCase';
 
 const tests = [{

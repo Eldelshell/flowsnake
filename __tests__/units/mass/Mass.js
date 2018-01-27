@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import Mass from '../../lib/converters/mass/Mass';
+import Mass from '../../../lib/converters/mass/Mass';
 import TestCase from '../TestCase';
 
 const tests = [{

@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import Illuminance from '../../../lib/converters/photometry/illuminance/Illuminance';
+import Illuminance from '../../../../lib/converters/photometry/illuminance/Illuminance';
 import TestCase from '../../TestCase';
 
 const tests = [{

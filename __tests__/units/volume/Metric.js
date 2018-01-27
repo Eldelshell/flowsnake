@@ -1,6 +1,6 @@
 import _ from 'lodash';
-import Volume from '../../lib/converters/volume/Volume';
-import VolumeMetric from '../../lib/converters/volume/Metric';
+import Volume from '../../../lib/converters/volume/Volume';
+import VolumeMetric from '../../../lib/converters/volume/Metric';
 import TestCase from '../TestCase';
 
 const tests = [{
