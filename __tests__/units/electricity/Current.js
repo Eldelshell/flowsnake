@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import Current from '../../../lib/converters/electricity/Current';
+import Current from '../../../lib/units/electricity/Current';
 import TestCase from '../TestCase';
 
 const tests = [{

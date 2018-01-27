@@ -1,4 +1,4 @@
-import Frequency from '../../lib/converters/Frequency';
+import Frequency from '../../lib/units/Frequency';
 import TestCase from './TestCase';
 
 const tests = [{

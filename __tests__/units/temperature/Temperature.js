@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import Temperature from '../../../lib/converters/temperature/Temperature';
+import Temperature from '../../../lib/units/temperature/Temperature';
 import TestCase from '../TestCase';
 
 const tests = [{

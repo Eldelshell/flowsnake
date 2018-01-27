@@ -1,4 +1,4 @@
-import Angle from '../../lib/converters/Angle';
+import Angle from '../../lib/units/Angle';
 import TestCase from './TestCase';
 
 const tests = [{

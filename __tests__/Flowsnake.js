@@ -1,7 +1,7 @@
 import Decimal from 'decimal.js';
 import Flowsnake from '../lib';
-import Temperature from '../lib/converters/temperature/Temperature';
-import TemperatureMetric from '../lib/converters/temperature/Metric';
+import Temperature from '../lib/units/temperature/Temperature';
+import TemperatureMetric from '../lib/units/temperature/Metric';
 
 it('Flowsnake should convert without descriptor', () => {
     expect(Flowsnake.convert(1).from('C').to('K')).toBeDefined();

@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import Decimal from 'decimal.js';
-import Illuminance from '../../../../lib/converters/photometry/illuminance/Illuminance';
+import Illuminance from '../../../../lib/units/photometry/illuminance/Illuminance';
 import TestCase from '../../TestCase';
 
 const tests = [{

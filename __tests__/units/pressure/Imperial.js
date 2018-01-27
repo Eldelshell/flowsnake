@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import Decimal from 'decimal.js';
-import Pressure from '../../../lib/converters/pressure/Pressure';
+import Pressure from '../../../lib/units/pressure/Pressure';
 import TestCase from '../TestCase';
 
 const tests = [{

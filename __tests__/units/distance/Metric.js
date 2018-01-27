@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import Distance from '../../../lib/converters/distance/Distance';
+import Distance from '../../../lib/units/distance/Distance';
 import TestCase from '../TestCase';
 
 const tests = [{

@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import Force from '../../../lib/converters/force/Force';
+import Force from '../../../lib/units/force/Force';
 import TestCase from '../TestCase';
 
 const tests = [{

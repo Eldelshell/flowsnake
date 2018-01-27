@@ -1,6 +1,6 @@
 import _ from 'lodash';
-import Volume from '../../../lib/converters/volume/Volume';
-import VolumeImperialUK from '../../../lib/converters/volume/ImperialUK';
+import Volume from '../../../lib/units/volume/Volume';
+import VolumeImperialUK from '../../../lib/units/volume/ImperialUK';
 import TestCase from '../TestCase';
 
 const tests = [{

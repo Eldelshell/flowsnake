@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import LinearAcceleration from '../../../../lib/converters/acceleration/linear/LinearAcceleration';
+import LinearAcceleration from '../../../../lib/units/acceleration/linear/LinearAcceleration';
 import TestCase from '../../TestCase';
 
 const tests = [{

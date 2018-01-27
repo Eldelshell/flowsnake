@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import Transfer from '../../../../lib/converters/data/transfer/Transfer';
+import Transfer from '../../../../lib/units/data/transfer/Transfer';
 import TestCase from '../../TestCase';
 
 const tests = [{
