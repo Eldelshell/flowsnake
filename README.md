@@ -17,11 +17,15 @@ Flowsnake includes many many many unit conversions.
 
 ### Usage
 
+```
+npm install -s flowsnake
+```
+
 For example to convert from Miles to Kilometers use:
 
 ```
 import Flowsnake from 'flowsnake';
-const res = Flowsnake.convert(1).from('C').to('K');
+const res = Flowsnake.convert(1).from('°C').to('K');
 res.eq(274.15) // true!
 ```
 
@@ -93,11 +97,7 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
  * Radiation
  * Inductance
  * Electric
-   * Conductance
-   * Potential
    * Resistivity
-   * Resistance
-   * Conductivity
  * Electrostatic capacitance
  * Linear charge/current density
  * Surface charge/current density
