@@ -11,7 +11,7 @@ const tests = [{
 },{
     from: 'AU', to: 'mile', values: [{ a: 0, b: 0 }, { a: 1, b: 9.29564 * (10**7) }]
 },{
-    from: 'km', to: 'AU', values: [{ a: 0, b: 0 }, { a: 10000000, b: 0.066846 }]
+    from: 'Gm', to: 'AU', values: [{ a: 0, b: 0 }, { a: 10, b: 0.066846 }]
 },{
     from: 'mile', to: 'AU', values: [{ a: 0, b: 0 }, { a: 10000000, b: 0.10758 }]
 }];
