@@ -4,21 +4,21 @@ import Temperature from '../lib/units/temperature/Temperature';
 import TemperatureMetric from '../lib/units/temperature/Metric';
 
 it('Flowsnake should convert without descriptor', () => {
-    expect(Flowsnake.convert(1).from('C').to('K')).toBeDefined();
-    expect(Flowsnake.convert(1).from('C').to('C')).toBeDefined();
+    expect(Flowsnake.convert(1).from('°C').to('K')).toBeDefined();
+    expect(Flowsnake.convert(1).from('°C').to('°C')).toBeDefined();
 });
 
 it('Flowsnake should convert with Decimal.js BigDecimal', () => {
     const v = new Decimal(30.5);
-    expect(Flowsnake.convert(v).from('C').to('K')).toBeDefined();
+    expect(Flowsnake.convert(v).from('°C').to('K')).toBeDefined();
 });
 
 it('Flowsnake should convert with descriptor name', () => {
-    expect(Flowsnake.convert(1).with('temperature').from('C').to('K')).toBeDefined();
+    expect(Flowsnake.convert(1).with('temperature').from('°C').to('K')).toBeDefined();
 });
 
 it('Flowsnake should convert with descriptor object', () => {
-    expect(Flowsnake.convert(1).with(Temperature).from('C').to('K')).toBeDefined();
+    expect(Flowsnake.convert(1).with(Temperature).from('°C').to('K')).toBeDefined();
 });
 
 it('Flowsnake should convert with unit objects', () => {
@@ -26,21 +26,21 @@ it('Flowsnake should convert with unit objects', () => {
 });
 
 it('Flowsnake should fail', () => {
-    expect(() => Flowsnake.convert(1).to('C') ).toThrow();
-    expect(() => Flowsnake.convert(1).from('ft2').to('C') ).toThrow();
+    expect(() => Flowsnake.convert(1).to('°C') ).toThrow();
+    expect(() => Flowsnake.convert(1).from('ft2').to('°C') ).toThrow();
 
     // Test that from fails because we already set a unit with convert(v)
-    const v = Flowsnake.unit(1).as('C');
-    expect(() => Flowsnake.convert(v).with(Temperature).from('C').to('K')).toThrow();
+    const v = Flowsnake.unit(1).as('°C');
+    expect(() => Flowsnake.convert(v).with(Temperature).from('°C').to('K')).toThrow();
 });
 
 it('Flowsnake should create a unit object', () => {
-    expect(Flowsnake.unit(1).as('C').name).toBe('Celsius');
-    expect(Flowsnake.unit(1).with(Temperature).as('C').name).toBe('Celsius');
+    expect(Flowsnake.unit(1).as('°C').name).toBe('Celsius');
+    expect(Flowsnake.unit(1).with(Temperature).as('°C').name).toBe('Celsius');
 });
 
 it('Flowsnake should convert a unit object', () => {
-    const v = Flowsnake.unit(1).as('C');
+    const v = Flowsnake.unit(1).as('°C');
     expect(Flowsnake.convert(v).with(Temperature).to('K')).toBeDefined();
 });
 

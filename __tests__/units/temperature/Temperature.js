@@ -3,51 +3,51 @@ import Temperature from '../../../lib/units/temperature/Temperature';
 import TestCase from '../TestCase';
 
 const tests = [{
-    from: 'C',
-    to: 'F',
+    from: '°C',
+    to: '°F',
     values: [{ a: 100, b: 212 }, { a: 0, b: 32 }, { a: -100, b: -148 }]
 },{
-    from: 'C',
+    from: '°C',
     to: 'K',
     values: [{ a: 100, b: 373.15 },{ a: 0, b: 273.15 },{ a: -100, b: 173.15 }]
 },{
-    from: 'C',
-    to: 'R',
+    from: '°C',
+    to: '°R',
     values: [{ a: 100, b: 671.67 },{ a: 0, b: 491.67 },{ a: -100, b: 311.67 }]
 },{
-    from: 'F',
-    to: 'C',
+    from: '°F',
+    to: '°C',
     values: [{ a: 210, b: 98.8889 }, { a: 32, b: 0 }, { a: -148, b: -100 }]
 },{
-    from: 'F',
+    from: '°F',
     to: 'K',
     values: [{ a: 100, b: 310.928 },{ a: 0, b: 255.372 },{ a: -100, b: 199.817 }]
 },{
-    from: 'F',
-    to: 'R',
+    from: '°F',
+    to: '°R',
     values: [{ a: 100, b: 559.67 },{ a: 0, b: 459.67 },{ a: -100, b: 359.67 }]
 },{
     from: 'K',
-    to: 'C',
+    to: '°C',
     values: [{ a: 373.15, b: 100 },{ a: 273.15, b: 0 },{ a: 173.15, b: -100 }]
 },{
     from: 'K',
-    to: 'F',
+    to: '°F',
     values: [{ a: 100, b: -279.67 },{ a: 0, b: -459.67 },{ a: -100, b: -639.67 }]
 },{
     from: 'K',
-    to: 'R',
+    to: '°R',
     values: [{ a: 100, b: 180 },{ a: 0, b: 0 },{ a: -100, b: -180 }]
 },{
-    from: 'R',
-    to: 'C',
+    from: '°R',
+    to: '°C',
     values: [{ a: 100, b: -217.594 },{ a: 0, b: -273.15 },{ a: -100, b: -328.706 }]
 },{
-    from: 'R',
-    to: 'F',
+    from: '°R',
+    to: '°F',
     values: [{ a: 100, b: -359.67 },{ a: 0, b: -459.67 },{ a: -100, b: -559.67 }]
 },{
-    from: 'R',
+    from: '°R',
     to: 'K',
     values: [{ a: 100, b: 55.556 },{ a: 0, b: 0 },{ a: -100, b: -55.556 }]
 }];
