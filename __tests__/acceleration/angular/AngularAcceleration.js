@@ -1,5 +1,5 @@
-import AngularAcceleration from '../lib/converters/AngularAcceleration';
-import TestCase from './TestCase';
+import AngularAcceleration from '../../../lib/converters/acceleration/angular/AngularAcceleration';
+import TestCase from '../../TestCase';
 
 const tests = [{
     from: 'rad/s2', to: 'r/s2', values: [{ a: 0, b: 0 }, { a: 20.76, b: 3.30405 }]
