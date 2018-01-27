@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import Volume from '../../../lib/units/volume/Volume';
-import VolumeMetric from '../../../lib/units/volume/Metric';
+import Liter from '../../../lib/units/volume/Liter';
 import TestCase from '../TestCase';
 
 const tests = [{
@@ -8,9 +8,7 @@ const tests = [{
 },{
     from: 'l', to: 'ml', values: [{ a: 0, b: 0 }, { a: 1, b: 1000 }]
 },{
-    from: 'cm3', to: 'l', values: [{ a: 0, b: 0 }, { a: 1, b: 0.001 }, { a: 4.9, b: 0.0049 }]
-},{
-    from: VolumeMetric.Liter, to: VolumeMetric.Mililiter, values: [{ a: 0, b: 0 }, { a: 1, b: 1000 }]
+    from: Liter.Liter, to: Liter.Milliliter, values: [{ a: 0, b: 0 }, { a: 1, b: 1000 }]
 }];
 
 TestCase.units(Volume, tests);

@@ -46,6 +46,22 @@ const tests = [{
     from: 'fl-oz-uk', to: 'krm', values: [{ a: 0, b: 0 }, { a: 100, b: 2840 }]
 },{
     from: 'in3', to: 'krm', values: [{ a: 0, b: 0 }, { a: 100, b: 1638.71 }]
+},{ // CubicMeter tests
+    from: 'l', to: 'm3', values: [{ a: 0, b: 0 }, { a: 1000, b: 1 }]
+},{
+    from: 'm3', to: 'l', values: [{ a: 0, b: 0 }, { a: 1, b: 1000 }]
+},{
+    from: 'gal-us', to: 'm3', values: [{ a: 0, b: 0 }, { a: 1000, b: 3.7888 }]
+},{
+    from: 'm3', to: 'gal-us', values: [{ a: 0, b: 0 }, { a: 4, b: 1056.69 }]
+},{
+    from: 'gal-uk', to: 'm3', values: [{ a: 0, b: 0 }, { a: 1000, b: 4.544 }]
+},{
+    from: 'm3', to: 'gal-uk', values: [{ a: 0, b: 0 }, { a: 4, b: 879.875 }]
+},{
+    from: 'ft3', to: 'm3', values: [{ a: 0, b: 0 }, { a: 1000, b: 28.3168 }]
+},{
+    from: 'm3', to: 'ft3', values: [{ a: 0, b: 0 }, { a: 4, b: 141.264 }]
 }];
 
 TestCase.units(Volume, tests);
