@@ -86,7 +86,6 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * Support configuration of Math.js
 * More and more units!!!
  * Numeral systems
- * Angular velocity
  * Charge
  * Field strength
  * Heat
