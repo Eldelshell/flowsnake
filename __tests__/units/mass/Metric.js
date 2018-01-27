@@ -7,7 +7,12 @@ const tests = [{
 },{
     from: 'g', to: 'mg', values: [{ a: 0, b: 0 }, { a: 1, b: 1000 }]
 },{
-    from: 'g', to: 'mcg', values: [{ a: 0, b: 0 }, { a: 1, b: 1000000 }]
+    from: 'g', to: 'ug', values: [{ a: 0, b: 0 }, { a: 1, b: 1000000 }]
+// TODO https://github.com/Eldelshell/flowsnake/issues/2
+// },{
+//     from: 'g', to: 'mcg', values: [{ a: 0, b: 0 }, { a: 1, b: 1000000 }]
+// },{
+//     from: 'g', to: 'µg', values: [{ a: 0, b: 0 }, { a: 1, b: 1000000 }]
 },{
     from: 'g', to: 'mt', values: [{ a: 0, b: 0 }, { a: 1000000, b: 1 }]
 }];
