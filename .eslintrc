@@ -37,6 +37,7 @@
         "no-trailing-spaces": ["error"],
         "comma-dangle": ["error"],
         "no-shadow": ["error"],
-        "no-console": [0]
+        "no-console": [0],
+        "valid-jsdoc": ["error"]
     }
 }
