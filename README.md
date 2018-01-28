@@ -41,6 +41,8 @@ Flowsnake includes some easy to use calculators:
 * Ohm's Law.
 * Electricity Cost.
 * Loan Calculator.
+* Greatest Common Denominator & Lowest Common Multiplier
+* Fraction Simplifier
 
 ### Usage
 
