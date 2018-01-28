@@ -39,6 +39,7 @@ Flowsnake includes some easy to use calculators:
 * BMI calculator.
 * Ohm's Law.
 * Electricity Cost.
+* Loan Calculator.
 
 ### Usage
 
