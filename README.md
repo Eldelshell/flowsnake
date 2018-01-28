@@ -36,7 +36,8 @@ Flowsnake includes some easy to use calculators:
 * Download time calculator.
 * Tip calculator.
 * Prime factorization.
-* BMI calculator.
+* Body Mass Index (BMI).
+* Body Fat Percentage (BFP).
 * Ohm's Law.
 * Electricity Cost.
 * Loan Calculator.
