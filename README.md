@@ -38,6 +38,7 @@ Flowsnake includes some easy to use calculators:
 * Prime factorization.
 * BMI calculator.
 * Ohm's Law.
+* Electricity Cost.
 
 ### Usage
 
@@ -91,9 +92,9 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
    * Typography
 
 
-### Supported Units (462)
+### Supported Units (619)
 
-#### Linearacceleration
+#### Linear Acceleration
 * MeterPerSquareSecond (m/s2)
 * Decameterpersquaresecond (dam/s2)
 * Hectometerpersquaresecond (hm/s2)
@@ -123,7 +124,7 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * InchPerSquareSecond (in/s2)
 * YardPerSquareSecond (yd/s2)
 
-#### Angularacceleration
+#### Angular Acceleration
 * RadianPerSquareSecond (rad/s2)
 * RadianPerSquareMinute (rad/min2)
 * RevolutionPerSquareSecond (r/s2)
@@ -214,7 +215,7 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * Parsec (pc)
 * LightYear (ly)
 
-#### Aparentpower
+#### Aparent Power
 * VoltAmpere (VA)
 * Decavoltampere (daVA)
 * Hectovoltampere (hVA)
@@ -238,14 +239,142 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * Zeptovoltampere (zVA)
 * Yoctovoltampere (yVA)
 
+#### Capacitance
+* Farad (F)
+* Decafarad (daF)
+* Hectofarad (hF)
+* Kilofarad (kF)
+* Megafarad (MF)
+* Gigafarad (GF)
+* Terafarad (TF)
+* Petafarad (PF)
+* Exafarad (EF)
+* Zettafarad (ZF)
+* Yottafarad (YF)
+* Decifarad (dF)
+* Centifarad (cF)
+* Millifarad (mF)
+* Microfarad (uF)
+* MicroSIfarad (µF)
+* Nanofarad (nF)
+* Picofarad (pF)
+* Femtofarad (fF)
+* Attofarad (aF)
+* Zeptofarad (zF)
+* Yoctofarad (yF)
+* Abfarad (abF)
+* Statfarad (statF)
+* CoulombVolt (C/V)
+
 #### Current
 * Ampere (A)
-* Milliampere (mA)
+* Decaampere (daA)
+* Hectoampere (hA)
 * Kiloampere (kA)
-* Microampere (µA)
+* Megaampere (MA)
+* Gigaampere (GA)
+* Teraampere (TA)
+* Petaampere (PA)
+* Exaampere (EA)
+* Zettaampere (ZA)
+* Yottaampere (YA)
+* Deciampere (dA)
+* Centiampere (cA)
+* Milliampere (mA)
+* Microampere (uA)
+* MicroSIampere (µA)
+* Nanoampere (nA)
+* Picoampere (pA)
+* Femtoampere (fA)
+* Attoampere (aA)
+* Zeptoampere (zA)
+* Yoctoampere (yA)
 * Abampere (abA)
 * Biot (Bi)
 * Statampere (statA)
+
+#### Charge
+* Coulomb (C)
+* Decacoulomb (daC)
+* Hectocoulomb (hC)
+* Kilocoulomb (kC)
+* Megacoulomb (MC)
+* Gigacoulomb (GC)
+* Teracoulomb (TC)
+* Petacoulomb (PC)
+* Exacoulomb (EC)
+* Zettacoulomb (ZC)
+* Yottacoulomb (YC)
+* Decicoulomb (dC)
+* Centicoulomb (cC)
+* Millicoulomb (mC)
+* Microcoulomb (uC)
+* MicroSIcoulomb (µC)
+* Nanocoulomb (nC)
+* Picocoulomb (pC)
+* Femtocoulomb (fC)
+* Attocoulomb (aC)
+* Zeptocoulomb (zC)
+* Yoctocoulomb (yC)
+* Abcoulomb (abC)
+* Statcoulomb (statC)
+* AmpereSecond (A·s)
+* AmpereMinute (A·m)
+* AmpereHour (A·h)
+
+#### Conductance
+* Siemens (S)
+* Decasiemens (daS)
+* Hectosiemens (hS)
+* Kilosiemens (kS)
+* Megasiemens (MS)
+* Gigasiemens (GS)
+* Terasiemens (TS)
+* Petasiemens (PS)
+* Exasiemens (ES)
+* Zettasiemens (ZS)
+* Yottasiemens (YS)
+* Decisiemens (dS)
+* Centisiemens (cS)
+* Millisiemens (mS)
+* Microsiemens (uS)
+* MicroSIsiemens (µS)
+* Nanosiemens (nS)
+* Picosiemens (pS)
+* Femtosiemens (fS)
+* Attosiemens (aS)
+* Zeptosiemens (zS)
+* Yoctosiemens (yS)
+* Absiemens (abS)
+* Statsiemens (statS)
+* AmperePerVolt (A/V)
+
+#### Potential
+* Volt (V)
+* Decavolt (daV)
+* Hectovolt (hV)
+* Kilovolt (kV)
+* Megavolt (MV)
+* Gigavolt (GV)
+* Teravolt (TV)
+* Petavolt (PV)
+* Exavolt (EV)
+* Zettavolt (ZV)
+* Yottavolt (YV)
+* Decivolt (dV)
+* Centivolt (cV)
+* Millivolt (mV)
+* Microvolt (uV)
+* MicroSIvolt (µV)
+* Nanovolt (nV)
+* Picovolt (pV)
+* Femtovolt (fV)
+* Attovolt (aV)
+* Zeptovolt (zV)
+* Yoctovolt (yV)
+* Abvolt (abV)
+* Statvolt (statV)
+* WattPerAmpere (W/A)
 
 #### Volume
 * Liter (l)
@@ -418,10 +547,10 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * Year (year)
 
 #### Temperature
-* Celsius (C)
+* Celsius (°C)
 * Kelvin (K)
-* Fahrenheit (F)
-* Rankine (R)
+* Fahrenheit (°F)
+* Rankine (°R)
 
 #### Transfer
 * BitSecond (bps)
@@ -506,7 +635,7 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * PoundPerSquareFoot (psf)
 * InchMercury (inHg)
 
-#### Shoesize
+#### Shoe Size
 * Europe (eu-adult)
 * USMale (us-adult-male)
 * USFemale (us-adult-female)
@@ -542,6 +671,33 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 #### Roman
 * Arabic (arabic)
 * Roman (roman)
+
+#### Resistance
+* Ohm (Ω)
+* Decaohm (daΩ)
+* Hectoohm (hΩ)
+* Kiloohm (kΩ)
+* Megaohm (MΩ)
+* Gigaohm (GΩ)
+* Teraohm (TΩ)
+* Petaohm (PΩ)
+* Exaohm (EΩ)
+* Zettaohm (ZΩ)
+* Yottaohm (YΩ)
+* Deciohm (dΩ)
+* Centiohm (cΩ)
+* Milliohm (mΩ)
+* Microohm (uΩ)
+* MicroSIohm (µΩ)
+* Nanoohm (nΩ)
+* Picoohm (pΩ)
+* Femtoohm (fΩ)
+* Attoohm (aΩ)
+* Zeptoohm (zΩ)
+* Yoctoohm (yΩ)
+* Abohm (abΩ)
+* Statohm (statΩ)
+* VoltPerAmpere (V/A)
 
 #### Torque
 * NewtonMeter (N·m)
@@ -604,3 +760,17 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * GramForce (gf)
 * KilogramForce (kgf)
 * Pond (pond)
+
+#### Angular Velocity
+* RadianPerSecond (rad/s)
+* RadianPerMinute (rad/m)
+* RadianPerHour (rad/h)
+* RadianPerDay (rad/d)
+* DegreePerSecond (deg/s)
+* DegreePerMinute (deg/m)
+* DegreePerHour (deg/h)
+* DegreePerDay (deg/d)
+* RevolutionPerSecond (rev/s)
+* RevolutionPerMinute (rev/m)
+* RevolutionPerHour (rev/h)
+* RevolutionPerDay (rev/d)
