@@ -57,3 +57,9 @@ it('Flowsnake can compare units equality', () => {
     expect(a.equals(c)).toBeFalsy();
     expect(b.equals(c)).toBeFalsy();
 });
+
+// Issue #4
+it('Flowsnake should generate correct names with prefixes', () => {
+    expect(Flowsnake.unit(1).as('m3').name).toBe('CubicMeter');
+    expect(Flowsnake.unit(1).as('km3').name).toBe('CubicKilometer');
+});
