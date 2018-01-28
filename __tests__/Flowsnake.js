@@ -25,6 +25,10 @@ it('Flowsnake should convert with unit objects', () => {
     expect(Flowsnake.convert(1).with(Temperature).from(TemperatureMetric.Celsius).to(TemperatureMetric.Kelvin)).toBeDefined();
 });
 
+it('Flowsnake should convert with unit names', () => {
+    expect(Flowsnake.convert(1).with(Temperature).from('Celsius').to('Kelvin')).toBeDefined();
+});
+
 it('Flowsnake should fail', () => {
     expect(() => Flowsnake.convert(1).to('°C') ).toThrow();
     expect(() => Flowsnake.convert(1).from('ft2').to('°C') ).toThrow();
