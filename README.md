@@ -37,6 +37,7 @@ Flowsnake includes some easy to use calculators:
 * Tip calculator.
 * Prime factorization.
 * BMI calculator.
+* Ohm's Law.
 
 ### Usage
 
