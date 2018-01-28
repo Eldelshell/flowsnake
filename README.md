@@ -21,7 +21,7 @@ Flowsnake includes many many many unit conversions.
 npm install -s flowsnake
 ```
 
-For example to convert from Miles to Kilometers use:
+For example to convert from Celsius to Kelvin use:
 
 ```
 import Flowsnake from 'flowsnake';
@@ -57,26 +57,6 @@ minutes.equals(12.4445); // true!
 
 // Prime factors
 Flowsnake.calculate('prime-factors').of(147); // '3×7²'
-
-// Bill calculator.
-const values = {
-    amount: 55,  // Bill amout
-    percent: 15, // Tip percent
-    pax: 4       // People to split the bill with
-};
-
-const res = Flowsnake.calculate('tip').of(values);
-// {
-//     total: {
-//         tip: 8.25,
-//         amount: 63.25
-//     },
-//     pax: {
-//         tip: 2.06,
-//         amount: 15.81
-//     }
-// }
-
 ```
 
 ## Contribute
