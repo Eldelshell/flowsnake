@@ -32,10 +32,10 @@
         "prefer-const": [2],
         "curly": [2],
         "no-alert": [2],
-        "semi": ["error"],
+        "semi": [1],
         "strict": ["error", "global"],
         "no-trailing-spaces": ["error"],
-        "comma-dangle": ["error"],
+        "comma-dangle": [1],
         "no-shadow": ["error"],
         "no-console": [0],
         "valid-jsdoc": ["error"]
