@@ -71,7 +71,6 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
 * Support configuration of Math.js
 * More and more units!!!
  * Numeral systems
- * Charge
  * Field strength
  * Heat
  * Magnetism
@@ -79,7 +78,6 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
  * Inductance
  * Electric
    * Resistivity
- * Electrostatic capacitance
  * Linear charge/current density
  * Surface charge/current density
  * Volume charge density
