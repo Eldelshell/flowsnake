@@ -43,6 +43,7 @@ Flowsnake includes some easy to use calculators:
 * Loan Calculator.
 * Greatest Common Denominator & Lowest Common Multiplier
 * Fraction Simplifier
+* Combinations & permutations
 
 ### Usage
 
