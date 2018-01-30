@@ -36,6 +36,7 @@ Flowsnake includes some easy to use calculators:
 * Download time calculator.
 * Tip calculator.
 * Prime factorization.
+* Divisors.
 * Body Mass Index (BMI).
 * Body Fat Percentage (BFP).
 * Ohm's Law.
@@ -44,6 +45,7 @@ Flowsnake includes some easy to use calculators:
 * Greatest Common Denominator & Lowest Common Multiplier
 * Fraction Simplifier
 * Combinations & permutations
++ Display Resolution
 
 ### Usage
 
@@ -90,10 +92,7 @@ Make sure that all tests (including yours) and lint run correctly  with `npm tes
  * Airflow
  * Density & Specific Volume
  * Inertia
- * Sound
  * Computers
-   * Resolution
-   * Pixel density
    * Typography
 
 
