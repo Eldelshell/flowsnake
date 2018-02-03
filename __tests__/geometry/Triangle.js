@@ -205,6 +205,26 @@ it('Triangles can be compared', () => {
     expect(t2.equals(t3)).toBeFalsy();
 });
 
+it('Triangles can be of type acute, right or obtuse and equilateral, isosceles or scalene.', () => {
+    let t1 = Triangle.of({ sides: { a: 5, b: 5, c: 5 } });
+    expect(t1.type === 'acute-equilateral').toBeTruthy();
+
+    t1 = Triangle.of({ angles: { a: 60, b: 60, c: 60 } });
+    expect(t1.type === 'acute-equilateral').toBeTruthy();
+
+    t1 = Triangle.of({ sides: { a: 5, b: 5, c: 6 } });
+    expect(t1.type === 'acute-isosceles').toBeTruthy();
+
+    t1 = Triangle.of({ sides: { a: 50, b: 55, c: 60 } });
+    expect(t1.type === 'acute-scalene').toBeTruthy();
+
+    t1 = Triangle.of({ sides: { a: 5, b: 5 }, angles: { c: 90 } });
+    expect(t1.type === 'right-isosceles').toBeTruthy();
+
+    t1 = Triangle.of({ sides: { a: 5, b: 7 }, angles: { c: 90 } });
+    expect(t1.type === 'right-scalene').toBeTruthy();
+});
+
 // const triangles = [
 //     {sides: {a: 1, b: 1, c: 1}}
 // ];
