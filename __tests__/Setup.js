@@ -30,5 +30,11 @@ expect.extend({
             message: () => errMsg
         };
         return result;
+    },
+    toBeUnit(received, ev, eu) {
+        return {
+            pass: received.equals(ev) && received.id === eu,
+            message: () => `Expected ${received.value}${received.id} to be ${ev}${eu}`
+        };
     }
 });
