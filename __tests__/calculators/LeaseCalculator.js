@@ -10,7 +10,7 @@ it('Flowsnake should calculate a lease', () => {
     };
 
     const res = Flowsnake.calculate('lease').of(values);
-    expect(res.toDP(0).eq(544)).toBeTruthy();
+    expect(res).toBeDecimal(544, 0);
 });
 
 it('Flowsnake should calculate a lease', () => {
@@ -23,7 +23,7 @@ it('Flowsnake should calculate a lease', () => {
     };
 
     const res = Flowsnake.calculate('lease').of(values);
-    expect(res.toDP(0).eq(454)).toBeTruthy();
+    expect(res).toBeDecimal(454, 0);
 });
 
 it('Flowsnake should calculate a lease', () => {
@@ -36,7 +36,7 @@ it('Flowsnake should calculate a lease', () => {
     };
 
     const res = Flowsnake.calculate('lease').of(values);
-    expect(res.toDP(0).eq(408)).toBeTruthy();
+    expect(res).toBeDecimal(408, 0);
 });
 
 it('Flowsnake should calculate a lease', () => {
@@ -49,5 +49,5 @@ it('Flowsnake should calculate a lease', () => {
     };
 
     const res = Flowsnake.calculate('lease').of(values);
-    expect(res.toDP(0).eq(384)).toBeTruthy();
+    expect(res).toBeDecimal(384, 0);
 });

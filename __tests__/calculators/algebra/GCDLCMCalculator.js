@@ -7,6 +7,6 @@ it('Flowsnake should calculate GCD & LCM', () => {
     };
 
     const res = Flowsnake.calculate('gcd-lcm').of(values);
-    expect(res.gcd === 10).toBeTruthy();
-    expect(res.lcm === 4200).toBeTruthy();
+    expect(res.gcd).toBe(10);
+    expect(res.lcm).toBe(4200);
 });

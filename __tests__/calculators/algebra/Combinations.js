@@ -9,7 +9,7 @@ it('Flowsnake should calculate a repeatable combination', () => {
     };
 
     const res = Flowsnake.calculate('combinations').of(values);
-    expect(res.eq(2002)).toBeTruthy();
+    expect(res).toBeDecimal(2002);
 });
 
 it('Flowsnake should calculate a non-repeatable combination', () => {
@@ -21,7 +21,7 @@ it('Flowsnake should calculate a non-repeatable combination', () => {
     };
 
     const res = Flowsnake.calculate('combinations').of(values);
-    expect(res.eq(252)).toBeTruthy();
+    expect(res).toBeDecimal(252);
 });
 
 it('Flowsnake should calculate a repeatable permutation', () => {
@@ -33,7 +33,7 @@ it('Flowsnake should calculate a repeatable permutation', () => {
     };
 
     const res = Flowsnake.calculate('combinations').of(values);
-    expect(res.eq(100000)).toBeTruthy();
+    expect(res).toBeDecimal(100000);
 });
 
 it('Flowsnake should calculate a non-repeatable permutation', () => {
@@ -45,5 +45,5 @@ it('Flowsnake should calculate a non-repeatable permutation', () => {
     };
 
     const res = Flowsnake.calculate('combinations').of(values);
-    expect(res.eq(30240)).toBeTruthy();
+    expect(res).toBeDecimal(30240);
 });

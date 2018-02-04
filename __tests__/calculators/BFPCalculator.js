@@ -8,8 +8,7 @@ it('Flowsnake should calculate male BFP', () => {
         sex: 'male'
     };
 
-    const res = Flowsnake.calculate('BFP').of(values);
-    expect(res.eq(16.62)).toBeTruthy();
+    expect(Flowsnake.calculate('BFP').of(values)).toBeDecimal(16.62, 2);
 });
 
 it('Flowsnake should calculate female BFP', () => {
@@ -20,6 +19,5 @@ it('Flowsnake should calculate female BFP', () => {
         sex: 'female'
     };
 
-    const res = Flowsnake.calculate('BFP').of(values);
-    expect(res.eq(27.42)).toBeTruthy();
+    expect(Flowsnake.calculate('BFP').of(values)).toBeDecimal(27.42, 2);
 });

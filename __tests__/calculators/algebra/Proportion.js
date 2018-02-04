@@ -9,7 +9,7 @@ it('Flowsnake should calculate a directly proportional proportion', () => {
     };
 
     const res = Flowsnake.calculate('proportion').of(values);
-    expect(res.toDP(2).eq(3.33)).toBeTruthy();
+    expect(res).toBeDecimal(3.33, 2);
 });
 
 it('Flowsnake should calculate an inversely proportional proportion', () => {
@@ -21,5 +21,5 @@ it('Flowsnake should calculate an inversely proportional proportion', () => {
     };
 
     const res = Flowsnake.calculate('proportion').of(values);
-    expect(res.eq(3000)).toBeTruthy();
+    expect(res).toBeDecimal(3000);
 });

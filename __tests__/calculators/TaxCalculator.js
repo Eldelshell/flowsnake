@@ -8,8 +8,8 @@ it('Flowsnake should calculate shared tip', () => {
     };
 
     const res = Flowsnake.calculate('tax').of(values);
-    expect(res.total.eq(63.25)).toBeTruthy();
-    expect(res.tax.eq(8.25)).toBeTruthy();
+    expect(res.total).toBeDecimal(63.25);
+    expect(res.tax).toBeDecimal(8.25);
 });
 
 it('Flowsnake should calculate shared tip', () => {
@@ -20,6 +20,6 @@ it('Flowsnake should calculate shared tip', () => {
     };
 
     const res = Flowsnake.calculate('tax').of(values);
-    expect(res.total.eq(47.8261)).toBeTruthy();
-    expect(res.tax.eq(7.17392)).toBeTruthy();
+    expect(res.total).toBeDecimal(47.8261, 4);
+    expect(res.tax).toBeDecimal(7.1739, 4);
 });

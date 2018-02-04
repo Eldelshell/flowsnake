@@ -8,10 +8,10 @@ it('Flowsnake should calculate shared tip', () => {
     };
 
     const res = Flowsnake.calculate('tip').of(values);
-    expect(res.total.tip.eq(8.25)).toBeTruthy();
-    expect(res.total.amount.eq(63.25)).toBeTruthy();
-    expect(res.pax.tip.eq(2.0625)).toBeTruthy();
-    expect(res.pax.amount.eq(15.8125)).toBeTruthy();
+    expect(res.total.tip).toBeDecimal(8.25);
+    expect(res.total.amount).toBeDecimal(63.25);
+    expect(res.pax.tip).toBeDecimal(2.0625);
+    expect(res.pax.amount).toBeDecimal(15.8125);
 });
 
 it('Flowsnake should calculate single tip', () => {
@@ -23,10 +23,10 @@ it('Flowsnake should calculate single tip', () => {
 
     const res = Flowsnake.calculate('tip').of(values);
 
-    expect(res.total.tip.eq(8.25)).toBeTruthy();
-    expect(res.total.amount.eq(63.25)).toBeTruthy();
-    expect(res.pax.tip.eq(8.25)).toBeTruthy();
-    expect(res.pax.amount.eq(63.25)).toBeTruthy();
+    expect(res.total.tip).toBeDecimal(8.25);
+    expect(res.total.amount).toBeDecimal(63.25);
+    expect(res.pax.tip).toBeDecimal(8.25);
+    expect(res.pax.amount).toBeDecimal(63.25);
 });
 
 it('Flowsnake should calculate a table of possible tips', () => {
@@ -36,7 +36,7 @@ it('Flowsnake should calculate a table of possible tips', () => {
 
     const res = Flowsnake.calculate('tip').of(values);
     expect(res[0].tip).toBe(5);
-    expect(res[0].total.eq(57.75)).toBeTruthy();
+    expect(res[0].total).toBeDecimal(57.75);
     expect(res[9].tip).toBe(50);
-    expect(res[9].total.eq(82.50)).toBeTruthy();
+    expect(res[9].total).toBeDecimal(82.50);
 });

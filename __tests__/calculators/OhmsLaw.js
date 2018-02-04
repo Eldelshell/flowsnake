@@ -7,8 +7,8 @@ it('Flowsnake should calculate current & power', () => {
     };
 
     const res = Flowsnake.calculate('ohms-law').of(values);
-    expect(res.power.equals(40)).toBeTruthy();
-    expect(res.current.equals(4)).toBeTruthy();
+    expect(res.power).toBeUnit(40, 'W');
+    expect(res.current).toBeUnit(4, 'A');
 });
 
 it('Flowsnake should calculate voltage & power', () => {
@@ -18,8 +18,8 @@ it('Flowsnake should calculate voltage & power', () => {
     };
 
     const res = Flowsnake.calculate('ohms-law').of(values);
-    expect(res.power.equals(40)).toBeTruthy();
-    expect(res.voltage.equals(10)).toBeTruthy();
+    expect(res.power).toBeUnit(40, 'W');
+    expect(res.voltage).toBeUnit(10, 'V');
 });
 
 it('Flowsnake should calculate resistance & power', () => {
@@ -29,8 +29,8 @@ it('Flowsnake should calculate resistance & power', () => {
     };
 
     const res = Flowsnake.calculate('ohms-law').of(values);
-    expect(res.power.equals(40)).toBeTruthy();
-    expect(res.resistance.equals(2.5)).toBeTruthy();
+    expect(res.power).toBeUnit(40, 'W');
+    expect(res.resistance).toBeUnit(2.5, 'Ω');
 });
 
 it('Flowsnake should fail for invalid arguments', () => {

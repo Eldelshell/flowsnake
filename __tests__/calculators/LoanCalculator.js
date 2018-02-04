@@ -8,9 +8,9 @@ it('Flowsnake should calculate a loan', () => {
     };
 
     const res = Flowsnake.calculate('loan').of(values);
-    expect(res.month.eq(30.21)).toBeTruthy();
-    expect(res.total.eq(302.07)).toBeTruthy();
-    expect(res.interests.eq(2.07)).toBeTruthy();
+    expect(res.month).toBeDecimal(30.21);
+    expect(res.total).toBeDecimal(302.07);
+    expect(res.interests).toBeDecimal(2.07);
     expect(res.payments === 10).toBeTruthy();
 });
 
@@ -22,8 +22,8 @@ it('Flowsnake should calculate a loan in years', () => {
     };
 
     const res = Flowsnake.calculate('loan').of(values);
-    expect(res.month.eq(557.94)).toBeTruthy();
-    expect(res.total.eq(66952.27)).toBeTruthy();
-    expect(res.interests.eq(21952.27)).toBeTruthy();
+    expect(res.month).toBeDecimal(557.94);
+    expect(res.total).toBeDecimal(66952.27);
+    expect(res.interests).toBeDecimal(21952.27);
     expect(res.payments === 120).toBeTruthy();
 });

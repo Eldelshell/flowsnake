@@ -7,5 +7,5 @@ it('Flowsnake should calculate BMI', () => {
     };
 
     const res = Flowsnake.calculate('BMI').of(values);
-    expect(res.eq(21.6)).toBeTruthy();
+    expect(res.toDP(2).eq(21.6)).toBeTruthy();
 });
