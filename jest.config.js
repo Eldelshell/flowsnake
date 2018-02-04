@@ -1,5 +1,6 @@
 module.exports = {
     verbose: false,
+    setupTestFrameworkScriptFile: "./__tests__/Setup.js",
     testMatch: [
         // "**/__tests__/**/*.js"
         "**/__tests__/**/calculators/**/*.js",
@@ -10,6 +11,7 @@ module.exports = {
     testPathIgnorePatterns: [
         "/node_modules",
         "/__tests__/*.js",
+        "/__tests__/Setup.js",
         "/__tests__/units/TestCase*"
     ]
 }
