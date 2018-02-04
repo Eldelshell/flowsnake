@@ -120,6 +120,12 @@ it('Detect a SSA triangle', () => {
     });
 });
 
+it('Detect & solve a HB triangle', () => {
+    let t = new Triangle({ sides: { a: 30 }, heights: { a: 25 } });
+    expect(t.isHB()).toBeTruthy();
+    t.solve();
+});
+
 it('Solve a AAA triangle', () => {
     let t = new Triangle({ angles: { a: 30, b: 30 } });
     t.solve();
