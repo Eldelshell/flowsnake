@@ -8,6 +8,7 @@ You can solve a triangle by giving one of the following options:
 * 3 Sides (SSS)
 * 2 angles and 1 side (AAS or ASA)
 * 2 sides and 1 angle (SAS or SSA)
+* 1 side and its base (HB)
 
 Given this, all sides, angles and heights are calculated. Also the area, perimeter and the type of the triangle when possible.
 
