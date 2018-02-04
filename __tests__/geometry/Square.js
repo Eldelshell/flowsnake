@@ -2,7 +2,8 @@ import Square from '../../lib/geometry/Square';
 
 it('Solve a square', () => {
     let s = Square.of(5);
-    expect(s.diagonal.toDP(3).eq(7.071)).toBeTruthy();
+    expect(s.diagonals.a.toDP(3).eq(7.071)).toBeTruthy();
+    expect(s.diagonals.b.toDP(3).eq(7.071)).toBeTruthy();
     expect(s.area.eq(25)).toBeTruthy();
     expect(s.perimeter.eq(20)).toBeTruthy();
 });

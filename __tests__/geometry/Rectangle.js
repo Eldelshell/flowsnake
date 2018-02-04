@@ -2,7 +2,8 @@ import Rectangle from '../../lib/geometry/Rectangle';
 
 it('Solve a Rectangle', () => {
     let s = Rectangle.of(5, 10);
-    expect(s.diagonal.toDP(2).eq(11.18)).toBeTruthy();
+    expect(s.diagonals.a.toDP(2).eq(11.18)).toBeTruthy();
+    expect(s.diagonals.b.toDP(2).eq(11.18)).toBeTruthy();
     expect(s.area.eq(50)).toBeTruthy();
     expect(s.perimeter.eq(30)).toBeTruthy();
 });
