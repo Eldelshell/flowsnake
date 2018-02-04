@@ -1,16 +1,6 @@
 import _ from 'lodash';
 import Decimal from 'decimal.js';
 
-expect.extend({
-    toBeTruthyWithMessage(received, errMsg) {
-        const result = {
-            pass: received,
-            message: () => errMsg
-        };
-        return result;
-    }
-});
-
 const TestCase = {
     units: function(descriptor, tests, idempotent) {
         tests.forEach(({from, to, values}) => {
