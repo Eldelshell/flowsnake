@@ -120,3 +120,27 @@ const p = Parallelogram.of(5, 10, 30);
 // p.area -> 25
 // p.perimeter -> 30
 ```
+
+## Circle
+
+You can solve a circle by providing one of the required values: radius, diameter, area or circumference.
+
+```
+const c = Circle.of({radius: 50});
+// c.diameter -> 1M00
+// c.area -> 7,853.98
+// c.perimeter -> 314.16
+```
+
+Also, you can obtain segments and sectors.
+
+```
+const s = Circle.of({radius: 20});
+
+const segment = s.segment({angle: 60});
+// segment.chord -> 20
+
+const sector = s.sector(60);
+// sector.arc -> 20.94
+
+```
