@@ -63,3 +63,9 @@ it('Flowsnake should generate correct names with prefixes', () => {
     expect(Flowsnake.unit(1).as('m3').name).toBe('CubicMeter');
     expect(Flowsnake.unit(1).as('km3').name).toBe('CubicKilometer');
 });
+
+it('Flowsnake should solve a triangle with the given values', () => {
+    expect(Flowsnake.geometry('triangle').area({ sides: { a: 30 }, heights: { a: 25 } })).toBeDecimal(375, 0);
+    expect(Flowsnake.geometry('triangle').perimeter({ sides: { a: 30, b: 40, c: 30 } })).toBeDecimal(100, 0);
+    expect(() => Flowsnake.geometry('triangle').of()).toThrow();
+});
