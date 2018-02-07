@@ -30,7 +30,7 @@ res.eq(274.15) // true!
 
 ## Unit Conversion
 
-Flowsnake includes many many many unit conversions. Check the [units README](/units/README.md) for a complete list.
+Flowsnake includes many many many unit conversions. Check the [units README](https://github.com/Eldelshell/flowsnake/blob/master/lib/units/README.md) for a complete list.
 
 ### Example
 
@@ -88,7 +88,7 @@ Flowsnake.calculate('prime-factors').of(147); // '3×7²'
 * Parallelogram
 * Circle
 
-Check the [Geometry README](/geometry/README.md) for more information.
+Check the [Geometry README](https://github.com/Eldelshell/flowsnake/blob/master/lib/geometry/README.md) for more information.
 
 ### Example
 
