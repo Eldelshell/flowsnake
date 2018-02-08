@@ -1,4 +1,4 @@
-# Supported Units (619)
+# Supported Units (674)
 
 ## Linear Acceleration
 * MeterPerSquareSecond (m/s2)
@@ -227,6 +227,7 @@
 * AmpereSecond (A·s)
 * AmpereMinute (A·m)
 * AmpereHour (A·h)
+* MilliAmpereHour (mAh)
 
 ## Conductance
 * Siemens (S)
@@ -506,6 +507,7 @@
 * BTUHour (btu/h)
 * CaloriePerHour (cal/h)
 * ErgPerSecond (erg/s)
+* DecibelMilliwatts (dBm)
 
 ## Pressure
 * Pascal (Pa)
@@ -553,6 +555,10 @@
 * Centimeter (cm)
 * Inch (in)
 * Mondopoint (mondopoint)
+
+## Sound
+* Decibel (dB)
+* Neper (Np)
 
 ## Illuminance
 * Lux (lx)
@@ -680,3 +686,62 @@
 * RevolutionPerMinute (rev/m)
 * RevolutionPerHour (rev/h)
 * RevolutionPerDay (rev/d)
+
+## Image Resolution
+* DotPerInch (dpi)
+* PixelPerInch (ppi)
+* DotPerCentimeter (dpcm)
+* PixelPerCentimeter (ppcm)
+
+## Pixel Density
+* Mdpi (mdpi)
+* Ldpi (ldpi)
+* Hdpi (hdpi)
+* Xhdpi (xhdpi)
+* Xxhdpi (xxhdpi)
+* Xxxhdpi (xxxhdpi)
+
+## Inductance
+* Henry (H)
+* Decahenry (daH)
+* Hectohenry (hH)
+* Kilohenry (kH)
+* Megahenry (MH)
+* Gigahenry (GH)
+* Terahenry (TH)
+* Petahenry (PH)
+* Exahenry (EH)
+* Zettahenry (ZH)
+* Yottahenry (YH)
+* Decihenry (dH)
+* Centihenry (cH)
+* Millihenry (mH)
+* Microhenry (uH)
+* MicroSIhenry (µH)
+* Nanohenry (nH)
+* Picohenry (pH)
+* Femtohenry (fH)
+* Attohenry (aH)
+* Zeptohenry (zH)
+* Yoctohenry (yH)
+* Abhenry (abH)
+* Stathenry (statH)
+* WeberAmpere (Wb/A)
+
+## Density
+* KilogramCubicMeter (kg/m3)
+* GramCubicMeter (g/m3)
+* MilligramCubicMeter (mg/m3)
+* KilogramLiter (kg/l)
+* GramLiter (g/l)
+* MilligramLiter (mg/l)
+* OunceCubicInch (oz/in3)
+* OunceCubicFoot (oz/ft3)
+* OunceGallon (oz/gal)
+* PoundCubicInch (lb/in3)
+* PoundCubicFoot (lb/ft3)
+* PoundCubicFoot (lb/yd3)
+* PoundGallon (lb/gal)
+* TonCubicYard (t/yd3)
+* SlugCubicFoot (slug/ft3)
+* PSIFeet (psi/1000ft)
