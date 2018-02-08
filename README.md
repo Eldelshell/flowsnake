@@ -54,7 +54,8 @@ Flowsnake includes some easy to use calculators:
 * Ohm's Law.
 * Electricity Cost.
 * Loan Calculator.
-* Resistor color code calculator (from colors to resistance and viceversa).
+* Resistor color code calculator (from colors to resistance [Ω] and viceversa).
+* Inductor color code calculator (from colors to inductance [µH] and viceversa).
 
 ### Algebra
 
@@ -119,14 +120,13 @@ Checkout the list of issues and vote for the next features to add.
  * Heat
  * Magnetism
  * Radiation
- * Inductance
  * Electric
    * Resistivity
  * Linear charge/current density
  * Surface charge/current density
  * Volume charge density
  * Airflow
- * Density & Specific Volume
+ * Specific Volume
  * Inertia
  * Computers
    * Typography
