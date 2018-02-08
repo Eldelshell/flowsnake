@@ -13,11 +13,11 @@ for (var k in descs) {
     }
 
     const desc = descs[k];
-    text.push(`\n#### ${_.startCase(k)}`);
+    text.push(`\n## ${_.startCase(k)}`);
     desc.describe().forEach((unit) => {
         text.push(`* ${unit.name} (${unit.id})`);
         total++;
     });
 }
-text.unshift(`### Supported Units (${total})`);
+text.unshift(`# Supported Units (${total})`);
 console.log(text.join('\n'));
