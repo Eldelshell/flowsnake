@@ -14,6 +14,8 @@ const tests = [{
     from: 'C', to: 'statC', values: [{ a: 0.00001, b: 29979.2 }]
 },{
     from: 'A·m', to: 'C', values: [{ a: 1, b: 60 }]
+},{
+    from: 'mAh', to: 'C', values: [{ a: 1, b: 3.6 }]
 }];
 
 TestCase.units(Charge, tests);
