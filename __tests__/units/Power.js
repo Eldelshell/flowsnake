@@ -17,6 +17,12 @@ const tests = [{
     from: 'mW', to: 'W', values: [{ a: 1, b: 0.001 }]
 },{
     from: 'mW', to: 'erg/s', values: [{ a: 1, b: 10000 }]
+},{
+    from: 'W', to: 'dBm', values: [{ a: 10, b: 40  }]
+},{
+    from: 'dBm', to: 'W', values: [{ a: 80, b: 100000 }]
+},{
+    from: 'dBm', to: 'kW', values: [{ a: 80, b: 100 }]
 }];
 
 TestCase.units(Power, tests);
