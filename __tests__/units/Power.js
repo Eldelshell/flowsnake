@@ -6,7 +6,7 @@ const tests = [{
 },{
     from: 'W', to: 'MW', values: [{ a: 10000, b: 0.01 }]
 },{
-    from: 'W', to: 'HP', values: [{ a: 10000, b: 13.5962 }]
+    from: 'W', to: 'HP', values: [{ a: 10000, b: 13.6 }]
 },{
     from: 'W', to: 'btu/h', values: [{ a: 10000, b: 34121 }]
 },{

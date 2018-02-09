@@ -11,7 +11,7 @@ const tests = [{
 },{
     from: 'lx', to: 'lm/m2', values: [{ a: 0, b: 0 }, { a: 1, b: 1 }]
 },{
-    from: 'lx', to: 'W/cm2', values: [{ a: 0, b: 0 }, { a: 50000000, b: 7.32064 }]
+    from: 'lx', to: 'W/cm2', values: [{ a: 0, b: 0 }, { a: 50000000, b: 7.32 }]
 }];
 
 TestCase.units(Illuminance, tests);

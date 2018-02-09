@@ -4,23 +4,23 @@ import TestCase from './TestCase';
 const tests = [{
     from: 'l/100km',
     to: 'km/l',
-    values: [{ a: 0, b: Infinity }, { a: 1, b: 100 }, { a: 4.4, b: 22.7273 }, { a: 50, b: 2 }]
+    values: [{ a: 0, b: Infinity }, { a: 1, b: 100 }, { a: 4.4, b: 22.73 }, { a: 50, b: 2 }]
 },{
     from: 'l/100km',
     to: 'mi/l',
-    values: [{ a: 0, b: Infinity }, { a: 1, b: 62.1364 }, { a: 4.4, b: 14.1219 }, { a: 50, b: 1.24273 }]
+    values: [{ a: 0, b: Infinity }, { a: 1, b: 62.14 }, { a: 4.4, b: 14.12 }, { a: 50, b: 1.24 }]
 },{
     from: 'l/100km',
     to: 'mpg-us',
-    values: [{ a: 0, b: Infinity }, { a: 1, b: 235.212 }, { a: 4.4, b: 53.4571 }, { a: 50, b: 4.70424 }]
+    values: [{ a: 0, b: Infinity }, { a: 1, b: 235.21 }, { a: 4.4, b: 53.46 }, { a: 50, b: 4.7 }]
 },{
     from: 'l/100km',
     to: 'mpg-uk',
-    values: [{ a: 0, b: Infinity }, { a: 1, b: 282.478 }, { a: 4.4, b: 64.1996 }, { a: 50, b: 5.64953 }]
+    values: [{ a: 0, b: Infinity }, { a: 1, b: 282.48 }, { a: 4.4, b: 64.2 }, { a: 50, b: 5.65 }]
 },{
     from: 'km/l',
     to: 'l/100km',
-    values: [{ a: 0, b: Infinity }, { a: 1, b: 100 }, { a: 4.4, b: 22.7273 }, { a: 50, b: 2 }, { a: 200, b: 0.5 }]
+    values: [{ a: 0, b: Infinity }, { a: 1, b: 100 }, { a: 4.4, b: 22.73 }, { a: 50, b: 2 }, { a: 200, b: 0.5 }]
 },{
     from: 'km/l',
     to: 'mi/l',
@@ -36,7 +36,7 @@ const tests = [{
 },{
     from: 'mi/l',
     to: 'l/100km',
-    values: [{ a: 0, b: Infinity }, { a: 1, b: 62.1364 }, { a: 4.4, b: 14.1219 }, { a: 50, b: 1.24273 }]
+    values: [{ a: 0, b: Infinity }, { a: 1, b: 62.14 }, { a: 4.4, b: 14.12 }, { a: 50, b: 1.24 }]
 },{
     from: 'mi/l',
     to: 'km/l',
@@ -52,7 +52,7 @@ const tests = [{
 },{
     from: 'mpg-us',
     to: 'l/100km',
-    values: [{ a: 0, b: Infinity }, { a: 1, b: 235.212 }, { a: 4.4, b: 53.4571 }, { a: 50, b: 4.70424 }]
+    values: [{ a: 0, b: Infinity }, { a: 1, b: 235.21 }, { a: 4.4, b: 53.46 }, { a: 50, b: 4.7 }]
 },{
     from: 'mpg-us',
     to: 'km/l',
@@ -68,7 +68,7 @@ const tests = [{
 },{
     from: 'mpg-uk',
     to: 'l/100km',
-    values: [{ a: 0, b: Infinity }, { a: 1, b: 282.478 }, { a: 4.4, b: 64.1996 }, { a: 50, b: 5.64953 }]
+    values: [{ a: 0, b: Infinity }, { a: 1, b: 282.48 }, { a: 4.4, b: 64.2 }, { a: 50, b: 5.65 }]
 },{
     from: 'mpg-uk',
     to: 'km/l',

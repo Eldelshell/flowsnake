@@ -11,9 +11,9 @@ const tests = [{
 },{
     from: 'lbf', to: 'kgf', values: [{ a: 0, b: 0 }, { a: 1, b: 0.4536 }]
 },{
-    from: 'kgf', to: 'J/m', values: [{ a: 0, b: 0 }, { a: 1, b: 9.80681 }]
+    from: 'kgf', to: 'J/m', values: [{ a: 0, b: 0 }, { a: 1, b: 9.81 }]
 },{
-    from: 'kgf', to: 'lbf', values: [{ a: 0, b: 0 }, { a: 1, b: 2.20459 }]
+    from: 'kgf', to: 'lbf', values: [{ a: 0, b: 0 }, { a: 1, b: 2.2 }]
 }];
 
 TestCase.units(Force, tests);

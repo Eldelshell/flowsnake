@@ -7,7 +7,7 @@ const tests = [{
 },{
     from: 'cd/m2', to: 'sb', values: [{ a: 0, b: 0 }, { a: 550.67, b: 0.055067 }]
 },{
-    from: 'cd/m2', to: 'L', values: [{ a: 0, b: 0 }, { a: 550.67, b: 0.172998 }]
+    from: 'cd/m2', to: 'L', values: [{ a: 0, b: 0 }, { a: 550.67, b: 0.17 }]
 },{
     from: 'cd/m2', to: 'lm/m2/sr', values: [{ a: 0, b: 0 }, { a: 550.67, b: 550.67 }]
 }];

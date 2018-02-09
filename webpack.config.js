@@ -29,7 +29,6 @@ const plugins = [
 ];
 
 const externals = {
-    mathjs: 'mathjs',
     decimaljs: 'decimal.js',
     lodash : {
         commonjs: "lodash",

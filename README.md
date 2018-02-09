@@ -4,7 +4,6 @@ Flowsnake is an Open Source library used by the Flowsnake mobile application. It
 used with NodeJS, React Native and on modern browsers.
 
 Flowsnake is possible thanks to:
-* [Math.js](http://mathjs.org/)
 * [Decimal.js](https://github.com/MikeMcl/decimal.js/)
 * [Jest](https://facebook.github.io/jest/)
 * [Babel](https://babeljs.io)

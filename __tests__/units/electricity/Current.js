@@ -13,7 +13,7 @@ const tests = [{
 },{
     from: 'A', to: 'Bi', values: [{ a: 1, b: 0.1 }]
 },{
-    from: 'A', to: 'statA', values: [{ a: 0.00001, b: 29979.2 }]
+    from: 'A', to: 'statA', values: [{ a: 0.00001, b: 29979.25 }]
 }];
 
 TestCase.units(Current, tests);

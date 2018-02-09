@@ -41,7 +41,6 @@
     "zip-webpack-plugin": "^2.1.0"
   },
   "dependencies": {
-    "decimal.js": "^9.0.1",
-    "mathjs": "^3.20.1"
+    "decimal.js": "^9.0.1"
   }
 }

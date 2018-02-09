@@ -2,9 +2,9 @@ import Parallelogram from '../../lib/geometry/Parallelogram';
 
 it('Solve a Parallelogram', () => {
     let s = Parallelogram.of(5, 10, 30);
-    expect(s.height.eq(5)).toBeTruthy();
-    expect(s.area.eq(25)).toBeTruthy();
-    expect(s.perimeter.eq(30)).toBeTruthy();
+    expect(s.height).toBeDecimal(5, 0);
+    expect(s.area).toBeDecimal(25, 0);
+    expect(s.perimeter).toBeDecimal(30, 0);
 });
 
 it('Fails to solve a Parallelogram', () => {

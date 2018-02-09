@@ -11,9 +11,9 @@ const tests = [{
 },{
     from: 'km', to: 'cm', values: [{ a: 0, b: 0 }, { a: 1, b: 100000 }]
 },{
-    from: 'km', to: 'nmi', values: [{ a: 0, b: 0 }, { a: 1, b: 0.53995 }]
+    from: 'km', to: 'nmi', values: [{ a: 0, b: 0 }, { a: 1, b: 0.54 }]
 },{
-    from: 'nmi', to: 'km', values: [{ a: 0, b: 0 }, { a: 1, b: 1.852 }]
+    from: 'nmi', to: 'km', values: [{ a: 0, b: 0 }, { a: 1, b: 1.85 }]
 }];
 
 TestCase.units(Distance, tests);

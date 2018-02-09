@@ -7,6 +7,6 @@ it('Should convert arabic to roman numbers', () => {
 });
 
 it('Should convert roman to arabic numbers', () => {
-    expect(Roman.convert('MMMCMXCIX', 'roman', 'arabic').eq(3999)).toBeTruthy();
-    expect(Roman.convert('I', 'roman', 'arabic').eq(1)).toBeTruthy();
+    expect(Roman.convert('MMMCMXCIX', 'roman', 'arabic')).toBe(3999);
+    expect(Roman.convert('I', 'roman', 'arabic')).toBe(1);
 });

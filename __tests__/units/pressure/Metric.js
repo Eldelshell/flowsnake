@@ -9,15 +9,15 @@ const tests = [{
 },{
     from: 'Pa', to: 'bar', values: [{ a: 0, b: 0 }, { a: 1000, b: 0.01 }]
 },{
-    from: 'Pa', to: 'torr', values: [{ a: 0, b: 0 }, { a: 10000, b: 75.0062 }]
+    from: 'Pa', to: 'torr', values: [{ a: 0, b: 0 }, { a: 10000, b: 75.01 }]
 },{
-    from: 'Pa', to: 'mmHg', values: [{ a: 0, b: 0 }, { a: 10000, b: 75.0064 }]
+    from: 'Pa', to: 'mmHg', values: [{ a: 0, b: 0 }, { a: 10000, b: 75.01 }]
 },{
-    from: 'Pa', to: 'kg/m2', values: [{ a: 0, b: 0 }, { a: 1000, b: 101.971 }]
+    from: 'Pa', to: 'kg/m2', values: [{ a: 0, b: 0 }, { a: 1000, b: 101.97 }]
 },{
     from: 'N/m2', to: 'Pa', values: [{ a: 0, b: 0 }, { a: 1000, b: 1000 }]
 },{
-    from: 'Pa', to: 'atm', values: [{ a: 0, b: 0 }, { a: 1000, b: 0.00986923 }]
+    from: 'Pa', to: 'atm', values: [{ a: 0, b: 0 }, { a: 1000, b: 0.01 }]
 }];
 
 TestCase.units(Pressure, tests);

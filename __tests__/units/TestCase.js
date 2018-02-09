@@ -12,11 +12,16 @@ const TestCase = {
                     let res = false;
                     if(_.isString(result)){
                         res = result == b;
+                        expect(res).toBeTruthyWithMessage(`Failed ${testCase} ${a} !== ${b} results: ${result}`);
                     }else{
-                        res = new Decimal(result).eq(b);
+                        let d = new Decimal(result);
+                        if(d.dp() > 8){
+                            d = d.toDP(2);
+                        }
+                        res = d.eq(b);
+                        expect(res).toBeTruthyWithMessage(`Failed ${testCase} ${a} !== ${b} results: ${d}`);
                     }
 
-                    expect(res).toBeTruthyWithMessage(`Failed ${testCase} ${a} !== ${b} results: ${result}`);
                 });
             });
 
@@ -32,11 +37,16 @@ const TestCase = {
                     let res = false;
                     if(_.isString(result)){
                         res = result == a;
+                        expect(res).toBeTruthyWithMessage(`Failed ${testCase} ${b} !== ${a} results: ${result}`);
                     }else{
-                        res = new Decimal(result).eq(a);
+                        let d = new Decimal(result);
+                        if(d.dp() > 8){
+                            d = d.toDP(2);
+                        }
+                        res = d.eq(a);
+                        expect(res).toBeTruthyWithMessage(`Failed ${testCase} ${b} !== ${a} results: ${d}`);
                     }
 
-                    expect(res).toBeTruthyWithMessage(`Failed ${testCase} ${b} !== ${a} results: ${result}`);
                 });
             });
         });

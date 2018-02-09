@@ -11,7 +11,7 @@ const tests = [{
 },{
     from: 'uΩ', to: 'abΩ', values: [{ a: 1, b: 1000 }]
 },{
-    from: 'TΩ', to: 'statΩ', values: [{ a: 1, b: 1.11264 }]
+    from: 'TΩ', to: 'statΩ', values: [{ a: 1, b: 1.11 }]
 }];
 
 TestCase.units(Resistance, tests);

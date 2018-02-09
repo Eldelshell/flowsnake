@@ -11,7 +11,7 @@ const tests = [{
 },{
     from: 'MS', to: 'abS', values: [{ a: 1, b: 0.001 }]
 },{
-    from: 'S', to: 'statS', values: [{ a: 0.00001, b: 8990380 }]
+    from: 'S', to: 'statS', values: [{ a: 0.00001, b: 8990380.29 }]
 },{
     from: 'A/V', to: 'S', values: [{ a: 1, b: 1 }]
 }];

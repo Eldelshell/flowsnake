@@ -11,7 +11,7 @@ const tests = [{
 },{
     from: 'uV', to: 'abV', values: [{ a: 1, b: 100 }]
 },{
-    from: 'kV', to: 'statV', values: [{ a: 1, b: 3.33564 }]
+    from: 'kV', to: 'statV', values: [{ a: 1, b: 3.34 }]
 }];
 
 TestCase.units(Potential, tests);

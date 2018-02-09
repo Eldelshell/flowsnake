@@ -4,7 +4,7 @@ import Distance from '../../../lib/units/distance/Distance';
 import TestCase from '../TestCase';
 
 const tests = [{
-    from: 'ft', to: 'mile', values: [{ a: 0, b: 0 }, { a: 550.65, b: 0.10429 }]
+    from: 'ft', to: 'mile', values: [{ a: 0, b: 0 }, { a: 550.65, b: 0.1 }]
 },{
     from: 'ft', to: 'in', values: [{ a: 0, b: 0 }, { a: 550.65, b: 6607.8 }]
 },{

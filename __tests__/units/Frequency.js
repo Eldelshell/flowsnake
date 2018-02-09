@@ -14,11 +14,11 @@ const tests = [{
 },{
     from: 'Hz', to: 'rpm', values: [{ a: 1, b: 60 }]
 },{
-    from: 'Hz', to: 'rad/s', values: [{ a: 1, b: 6.28319 }]
+    from: 'Hz', to: 'rad/s', values: [{ a: 1, b: 6.28 }]
 },{
     from: 'Hz', to: 'deg/s', values: [{ a: 1, b: 360 }]
 },{
-    from: 'Hz', to: 'rad/m', values: [{ a: 1, b: 376.991 }]
+    from: 'Hz', to: 'rad/m', values: [{ a: 1, b: 376.99 }]
 },{
     from: 'Hz', to: 'deg/m', values: [{ a: 1, b: 21600 }]
 }];

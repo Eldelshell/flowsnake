@@ -15,13 +15,13 @@ const tests = [{
 },{
     from: 'byte', to: 'MiB', values: [{ a: 0, b: 0 }, { a: 1024, b: 1 }]
 },{
-    from: 'Mi', to: 'byte', values: [{ a: 0, b: 0 }, { a: 1, b: 131073 }]
+    from: 'Mi', to: 'byte', values: [{ a: 0, b: 0 }, { a: 1, b: 131072 }]
 },{
     from: 'byte', to: 'Mi', values: [{ a: 0, b: 0 }, { a: 131073, b: 1 }]
 },{
     from: 'KiB', to: 'bit', values: [{ a: 0, b: 0 }, { a: 1, b: 8192 }]
 },{
-    from: 'bit', to: 'KiB', values: [{ a: 0, b: 0 }, { a: 1000000, b: 122.07 }]
+    from: 'bit', to: 'KiB', values: [{ a: 0, b: 0 }, { a: 1000000, b: 122.0703125 }]
 }];
 
 TestCase.units(Storage, tests);

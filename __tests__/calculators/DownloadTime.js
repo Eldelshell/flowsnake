@@ -7,8 +7,8 @@ it('Flowsnake should calculate download time', () => {
     };
 
     const seconds = Flowsnake.calculate('download-time').of(values);
-    expect(seconds.equals(746.667)).toBeTruthy();
+    expect(seconds).toBeUnit(746.6666667, 's');
 
     const minutes = Flowsnake.convert(seconds).to('min');
-    expect(minutes.equals(12.4445)).toBeTruthy();
+    expect(minutes).toBeDecimal(12.44, 2);
 });

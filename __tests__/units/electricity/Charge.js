@@ -11,7 +11,7 @@ const tests = [{
 },{
     from: 'C', to: 'abC', values: [{ a: 1, b: 0.1 }]
 },{
-    from: 'C', to: 'statC', values: [{ a: 0.00001, b: 29979.2 }]
+    from: 'C', to: 'statC', values: [{ a: 0.00001, b: 29979.25 }]
 },{
     from: 'A·m', to: 'C', values: [{ a: 1, b: 60 }]
 },{

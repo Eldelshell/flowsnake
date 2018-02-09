@@ -5,25 +5,25 @@ import TestCase from '../TestCase';
 const tests = [{
     from: 'ml', to: 'fl-oz-us', values: [{ a: 0, b: 0 }, { a: 1000, b: 33.814 }]
 },{
-    from: 'ml', to: 'gal-us', values: [{ a: 0, b: 0 }, { a: 1000, b: 0.264172 }]
+    from: 'ml', to: 'gal-us', values: [{ a: 0, b: 0 }, { a: 1000, b: 0.26 }]
 },{
     from: 'ml', to: 'fl-oz-uk', values: [{ a: 0, b: 0 }, { a: 1000, b: 35.1951 }]
 },{
-    from: 'ml', to: 'gal-uk', values: [{ a: 0, b: 0 }, { a: 1000, b: 0.219969 }]
+    from: 'ml', to: 'gal-uk', values: [{ a: 0, b: 0 }, { a: 1000, b: 0.22 }]
 },{
     from: 'gal-uk', to: 'gal-us', values: [{ a: 0, b: 0 }, { a: 50, b: 60.05 }]
 },{
-    from: 'tsp-us', to: 'gal-uk', values: [{ a: 0, b: 0 }, { a: 1000, b: 1.08417 }]
+    from: 'tsp-us', to: 'gal-uk', values: [{ a: 0, b: 0 }, { a: 1000, b: 1.08 }]
 },{
-    from: 'gal-us', to: 'in3', values: [{ a: 0, b: 0 }, { a: 2.5, b: 577.503 }]
+    from: 'gal-us', to: 'in3', values: [{ a: 0, b: 0 }, { a: 2.5, b: 577.5 }]
 },{
-    from: 'gal-uk', to: 'in3', values: [{ a: 0, b: 0 }, { a: 2.5, b: 693.551 }]
+    from: 'gal-uk', to: 'in3', values: [{ a: 0, b: 0 }, { a: 2.5, b: 693.55 }]
 },{
-    from: 'dl', to: 'in3', values: [{ a: 0, b: 0 }, { a: 10, b: 61.026 }]
+    from: 'dl', to: 'in3', values: [{ a: 0, b: 0 }, { a: 10, b: 61.03 }]
 },{
-    from: 'in3', to: 'gal-us', values: [{ a: 0, b: 0 }, { a: 577.5, b: 2.49999 }]
+    from: 'in3', to: 'gal-us', values: [{ a: 0, b: 0 }, { a: 577.5, b: 2.5 }]
 },{
-    from: 'in3', to: 'gal-uk', values: [{ a: 0, b: 0 }, { a: 693.54, b: 2.49998 }]
+    from: 'in3', to: 'gal-uk', values: [{ a: 0, b: 0 }, { a: 693.54, b: 2.5 }]
 },{
     from: 'in3', to: 'dl', values: [{ a: 0, b: 0 }, { a: 61.0237, b: 10 }]
 },{
@@ -39,7 +39,7 @@ const tests = [{
 },{
     from: 'krm', to: 'fl-oz-us', values: [{ a: 0, b: 0 }, { a: 100, b: 3.3814 }]
 },{
-    from: 'krm', to: 'in3', values: [{ a: 0, b: 0 }, { a: 100, b: 6.1026 }]
+    from: 'krm', to: 'in3', values: [{ a: 0, b: 0 }, { a: 100, b: 6.1 }]
 },{
     from: 'fl-oz-us', to: 'krm', values: [{ a: 0, b: 0 }, { a: 100, b: 2960 }]
 },{
@@ -53,15 +53,15 @@ const tests = [{
 },{
     from: 'gal-us', to: 'm3', values: [{ a: 0, b: 0 }, { a: 1000, b: 3.7888 }]
 },{
-    from: 'm3', to: 'gal-us', values: [{ a: 0, b: 0 }, { a: 4, b: 1056.69 }]
+    from: 'm3', to: 'gal-us', values: [{ a: 0, b: 0 }, { a: 4, b: 1056.6875 }]
 },{
-    from: 'gal-uk', to: 'm3', values: [{ a: 0, b: 0 }, { a: 1000, b: 4.544 }]
+    from: 'gal-uk', to: 'm3', values: [{ a: 0, b: 0 }, { a: 1000, b: 4.54 }]
 },{
-    from: 'm3', to: 'gal-uk', values: [{ a: 0, b: 0 }, { a: 4, b: 879.875 }]
+    from: 'm3', to: 'gal-uk', values: [{ a: 0, b: 0 }, { a: 4, b: 879.8775 }]
 },{
-    from: 'ft3', to: 'm3', values: [{ a: 0, b: 0 }, { a: 1000, b: 28.3168 }]
+    from: 'ft3', to: 'm3', values: [{ a: 0, b: 0 }, { a: 1000, b: 28.32 }]
 },{
-    from: 'm3', to: 'ft3', values: [{ a: 0, b: 0 }, { a: 4, b: 141.264 }]
+    from: 'm3', to: 'ft3', values: [{ a: 0, b: 0 }, { a: 4, b: 141.26 }]
 }];
 
 TestCase.units(Volume, tests);

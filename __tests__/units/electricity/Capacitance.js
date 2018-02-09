@@ -11,7 +11,7 @@ const tests = [{
 },{
     from: 'kF', to: 'abF', values: [{ a: 1000, b: 0.001 }]
 },{
-    from: 'TF', to: 'statF', values: [{ a: 1, b: 1.11264 }]
+    from: 'TF', to: 'statF', values: [{ a: 1, b: 1.11 }]
 }];
 
 TestCase.units(Capacitance, tests);

@@ -11,9 +11,9 @@ const tests = [{
 },{
     from: 'lbf·ft', to: 'kgf·m', values: [{ a: 0, b: 0 }, { a: 1, b: 0.138255 }]
 },{
-    from: 'kgf·m', to: 'kN·m', values: [{ a: 0, b: 0 }, { a: 1, b: 0.00980681 }]
+    from: 'kgf·m', to: 'kN·m', values: [{ a: 0, b: 0 }, { a: 1, b: 0.01 }]
 },{
-    from: 'kgf·m', to: 'lbf·ft', values: [{ a: 0, b: 0 }, { a: 1, b: 7.23301 }]
+    from: 'kgf·m', to: 'lbf·ft', values: [{ a: 0, b: 0 }, { a: 1, b: 7.23 }]
 }];
 
 TestCase.units(Torque, tests);

@@ -2,7 +2,7 @@ import AngularAcceleration from '../../../../lib/units/acceleration/angular/Angu
 import TestCase from '../../TestCase';
 
 const tests = [{
-    from: 'rad/s2', to: 'r/s2', values: [{ a: 0, b: 0 }, { a: 20.76, b: 3.30405 }]
+    from: 'rad/s2', to: 'r/s2', values: [{ a: 0, b: 0 }, { a: 20.76, b: 3.3 }]
 },{
     from: 'rad/s2', to: 'r/min2', values: [{ a: 0, b: 0 }, { a: 20.76, b: 11894.6 }]
 },{

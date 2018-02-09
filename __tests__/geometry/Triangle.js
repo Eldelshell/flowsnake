@@ -139,60 +139,60 @@ it('Solve a SSS triangle', () => {
     expect(t.isSSS()).toBeTruthy();
     t.solve();
     const {a,b,c} = t.angles;
-    expect(a.eq(75.5225)).toBeTruthyWithMessage(`Failed ${a} !== 75.5225`);
-    expect(b.eq(46.5675)).toBeTruthyWithMessage(`Failed ${b} !== 46.5675`);
-    expect(c.eq(57.91)).toBeTruthyWithMessage(`Failed ${c} !== 57.91`);
-    expect(t.area.eq(20.3332)).toBeTruthyWithMessage(`Failed ${t.area} !== 20.3332`);
+    expect(a).toBeDecimal(75.52, 2);
+    expect(b).toBeDecimal(46.57, 2);
+    expect(c).toBeDecimal(57.91, 2);
+    expect(t.area).toBeDecimal(20.33, 2);
 });
 
 it('Solve a AAS triangle', () => {
     let t = new Triangle({ angles: {a: 35, c: 62}, sides: { c: 7 } });
     expect(t.isAAS()).toBeTruthy();
     t.solve();
-    expect(t.angles.b.eq(83)).toBeTruthyWithMessage(`Failed ${t.angles.b} !== 83`);
-    expect(t.sides.a.toDP(2).eq(4.55)).toBeTruthyWithMessage(`Failed ${t.sides.a.toDP(2)} !== 4.55`);
-    expect(t.sides.b.toDP(2).eq(7.87)).toBeTruthyWithMessage(`Failed ${t.sides.b.toDP(2)} !== 7.87`);
-    expect(t.area.eq(15.797)).toBeTruthyWithMessage(`Failed ${t.area} !== 15.797`);
+    expect(t.angles.b).toBeDecimal(83);
+    expect(t.sides.a).toBeDecimal(4.55, 2);
+    expect(t.sides.b).toBeDecimal(7.87, 2);
+    expect(t.area).toBeDecimal(15.80, 2);
 });
 
 it('Solve a ASA triangle', () => {
     let t = new Triangle({ angles: {a: 76, b: 34}, sides: { c: 9 } });
     expect(t.isASA()).toBeTruthy();
     t.solve();
-    expect(t.angles.c.eq(70)).toBeTruthyWithMessage(`Failed ${t.angles.c} !== 70`);
-    expect(t.sides.a.toDP(2).eq(9.29)).toBeTruthyWithMessage(`Failed ${t.sides.a.toDP(2)} !== 9.29`);
-    expect(t.sides.b.toDP(2).eq(5.36)).toBeTruthyWithMessage(`Failed ${t.sides.b.toDP(2)} !== 5.36`);
-    expect(t.area.eq(23.3849)).toBeTruthyWithMessage(`Failed ${t.area} !== 23.3849`);
+    expect(t.angles.c).toBeDecimal(70);
+    expect(t.sides.a).toBeDecimal(9.29, 2);
+    expect(t.sides.b).toBeDecimal(5.36, 2);
+    expect(t.area).toBeDecimal(23.38, 2);
 });
 
 it('Solve a SAS triangle', () => {
     let t = new Triangle({ angles: {a: 49}, sides: { b: 5, c: 7 } });
     expect(t.isSAS()).toBeTruthy();
     t.solve();
-    expect(t.angles.b.eq(45.4116)).toBeTruthyWithMessage(`Failed ${t.angles.b} !== 45.4116`);
-    expect(t.angles.c.eq(85.5884)).toBeTruthyWithMessage(`Failed ${t.angles.c} !== 85.5884`);
-    expect(t.sides.a.toDP(2).eq(5.30)).toBeTruthyWithMessage(`Failed ${t.sides.a.toDP(2)} !== 5.30`);
-    expect(t.area.eq(13.2075)).toBeTruthyWithMessage(`Failed ${t.area} !== 13.2075`);
+    expect(t.angles.b).toBeDecimal(45.41, 2);
+    expect(t.angles.c).toBeDecimal(85.59, 2);
+    expect(t.sides.a).toBeDecimal(5.30, 2);
+    expect(t.area).toBeDecimal(13.21, 2);
 
     t = new Triangle({ angles: {b: 49}, sides: { a: 5, c: 7 } });
     expect(t.isSAS()).toBeTruthy();
     t.solve();
-    expect(t.area.eq(13.2075)).toBeTruthyWithMessage(`Failed ${t.area} !== 13.2075`);
+    expect(t.area).toBeDecimal(13.21, 2);
 
     t = new Triangle({ angles: {c: 49}, sides: { a: 5, b: 7 } });
     expect(t.isSAS()).toBeTruthy();
     t.solve();
-    expect(t.area.eq(13.2074)).toBeTruthyWithMessage(`Failed ${t.area} !== 13.2074`);
+    expect(t.area).toBeDecimal(13.21, 2);
 });
 
 it('Solve a SSA triangle', () => {
     let t = new Triangle({ angles: {b: 31}, sides: { b: 8, c: 13 } });
     expect(t.isSSA()).toBeTruthy();
     t.solve();
-    expect(t.angles.a.eq(92.182)).toBeTruthyWithMessage(`Failed ${t.angles.a} !== 92.182`);
-    expect(t.angles.c.eq(56.818 )).toBeTruthyWithMessage(`Failed ${t.angles.c} !== 56.818`);
-    expect(t.sides.a.toDP(2).eq(15.52)).toBeTruthyWithMessage(`Failed ${t.sides.a.toDP(2)} !== 15.52`);
-    expect(t.area.eq(51.9625)).toBeTruthyWithMessage(`Failed ${t.area} !== 51.9625`);
+    expect(t.angles.a).toBeDecimal(92.18, 2);
+    expect(t.angles.c).toBeDecimal(56.82, 2);
+    expect(t.sides.a).toBeDecimal(15.52, 2);
+    expect(t.area).toBeDecimal(51.96, 2);
 });
 
 it('Triangles can be compared', () => {
