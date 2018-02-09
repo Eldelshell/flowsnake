@@ -8,7 +8,7 @@ it('Flowsnake should calculate male BFP', () => {
         sex: 'male'
     };
 
-    expect(Flowsnake.calculate('BFP').of(values)).toBeDecimal(16.62, 2);
+    expect(Flowsnake.calculate('BFP').of(values)).toBeDecimal(16.63, 2);
 });
 
 it('Flowsnake should calculate female BFP', () => {
@@ -19,5 +19,5 @@ it('Flowsnake should calculate female BFP', () => {
         sex: 'female'
     };
 
-    expect(Flowsnake.calculate('BFP').of(values)).toBeDecimal(27.42, 2);
+    expect(Flowsnake.calculate('BFP').of(values)).toBeDecimal(27.43, 2);
 });
